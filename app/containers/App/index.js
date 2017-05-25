@@ -12,6 +12,7 @@
  */
 
 import React from 'react';
+import PopoverAppBar from 'components/PopoverAppBar';
 
 export default class App extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
@@ -19,10 +20,14 @@ export default class App extends React.PureComponent { // eslint-disable-line re
     children: React.PropTypes.node,
   };
 
+  // {React.Children.toArray(this.props.children)}
+
   render() {
     return (
       <div>
-        {React.Children.toArray(this.props.children)}
+        <PopoverAppBar>
+          {this.props.children}
+        </PopoverAppBar>
       </div>
     );
   }

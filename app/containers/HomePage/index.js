@@ -1,24 +1,43 @@
-/*
- * HomePage
- *
- * This is the first thing users see of our App, at the '/' route
- *
- * NOTE: while this component should technically be a stateless functional
- * component (SFC), hot reloading does not currently support SFCs. If hot
- * reloading is not a necessity for you then you can refactor it and remove
- * the linting exception.
+/**
+ * Contains content for the homepage of the application.
  */
 
 import React from 'react';
+import { Card, CardHeader, CardText } from 'material-ui';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 
-export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+const styles = {
+  content: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+};
+
+export default class HomePage extends React.Component {
+
+  componentWillMount() {
+    this.props.setPageTitle("Home"); // eslint-disable-line
+  }
+
   render() {
     return (
-      <h1>
-        <FormattedMessage {...messages.header} />
-      </h1>
+      <div className="homepage">
+        <Card style={styles}>
+          <CardHeader
+            title={<FormattedMessage {...messages.title} />}
+            subtitle={<FormattedMessage {...messages.subtitle} />}
+          />
+          <CardText>
+            <FormattedMessage {...messages.header} />
+            <br />
+            <br />
+            <FormattedMessage {...messages.footer} />
+          </CardText>
+        </Card>
+      </div>
     );
   }
 }

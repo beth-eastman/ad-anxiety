@@ -16,6 +16,9 @@ export default function createRoutes(store) {
   // Create reusable async injectors using getAsyncInjectors factory
   const { injectReducer, injectSagas } = getAsyncInjectors(store); // eslint-disable-line no-unused-vars
 
+  // TODO: change placeholder routes
+  // TODO: Know NAME meaning of route
+
   return [
     {
       path: '/',
@@ -32,6 +35,79 @@ export default function createRoutes(store) {
         });
 
         importModules.catch(errorLoading);
+      },
+    }, {
+      path: '/videos',
+      name: 'videos',
+      getComponent(nextState, cb) {
+        import('containers/VideosPage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: '/assessment',
+      name: 'assessments',
+      getComponent(nextState, cb) {
+        import('containers/AssessmentPage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: '/assessment/:assessmentId',
+      name: 'assessmentsquiz',
+      getComponent(nextState, cb) {
+        // TODO: FIX URL
+        import('components/Page')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: '/library',
+      name: 'library',
+      getComponent(nextState, cb) {
+        import('containers/LibraryPage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: '/library/:libraryPageId',
+      name: 'libraryInfo',
+      getComponent(nextState, cb) {
+        import('containers/NotFoundPage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: '/resources',
+      name: 'resources',
+      getComponent(nextState, cb) {
+        import('containers/ResourcePage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: '/resources/:resourceId',
+      name: 'resourcePage',
+      getComponent(nextState, cb) {
+        import('containers/NotFoundPage')
+        .then(loadModule(cb))
+        .catch(errorLoading);
+      },
+    }, {
+      path: '/apphub',
+      name: 'app-hub',
+      getComponent(nextState, cb) {
+        import('containers/NotFoundPage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: '/videos/:videoId',
+      name: 'video',
+      getComponent(nextState, cb) {
+        import('components/Video')
+          .then(loadModule(cb))
+          .catch(errorLoading);
       },
     }, {
       path: '*',
