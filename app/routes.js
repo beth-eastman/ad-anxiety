@@ -86,10 +86,27 @@ export default function createRoutes(store) {
           .catch(errorLoading);
       },
     }, {
-      path: '/resources/:resourceId',
-      name: 'resourcePage',
+      path: '/resources/links',
+      name: 'links',
       getComponent(nextState, cb) {
-        import('containers/NotFoundPage')
+        import('components/Links')
+        .then(loadModule(cb))
+        .catch(errorLoading);
+      },
+    }, {
+      path: '/resources/books',
+      name: 'books',
+      getComponent(nextState, cb) {
+        import('components/Books')
+        .then(loadModule(cb))
+        .catch(errorLoading);
+      },
+    },
+    {
+      path: '/resources/facts/:factId',
+      name: 'facts',
+      getComponent(nextState, cb) {
+        import('components/Facts')
         .then(loadModule(cb))
         .catch(errorLoading);
       },
