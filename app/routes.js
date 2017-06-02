@@ -73,7 +73,7 @@ export default function createRoutes(store) {
       path: '/library/:libraryPageId',
       name: 'libraryInfo',
       getComponent(nextState, cb) {
-        import('containers/NotFoundPage')
+        import('components/LibraryBook')
           .then(loadModule(cb))
           .catch(errorLoading);
       },
@@ -100,6 +100,15 @@ export default function createRoutes(store) {
         import('components/Books')
         .then(loadModule(cb))
         .catch(errorLoading);
+      },
+    },
+    {
+      path: '/resources/articles',
+      names: 'articles',
+      getComponent(nextState, cb) {
+        import('components/Article')
+          .then(loadModule(cb))
+          .catch(errorLoading);
       },
     },
     {

@@ -1,23 +1,25 @@
 /**
- * Contains video contents of the application.
+ * Contains a list of different resource pages (Links, Books, Articles, and Facts).
+ *
+ * Bethany Eastman
  */
-
 import React from 'react';
-import { Card, CardHeader, List, ListItem } from 'material-ui';
+import { Card, List, ListItem } from 'material-ui';
 import { browserHistory } from 'react-router';
 
 export default class ResourcePage extends React.Component {
 
+  /* Change AppBar title */
   componentWillMount() {
     this.props.setPageTitle("Resources"); // eslint-disable-line
+    this.props.changeIcon('Home'); // eslint-disable-line
   }
 
+  /* Create a list of resources that directs the user to the corresponding content
+   * page when selected */
   render() {
     return (
       <Card>
-        <CardHeader
-          title="Resources"
-        />
         <List>
           <ListItem
             primaryText="Links"
@@ -29,12 +31,6 @@ export default class ResourcePage extends React.Component {
             primaryText="Books"
             onTouchTap={() => {
               browserHistory.push('/resources/books');
-            }}
-          />
-          <ListItem
-            primaryText="Forum"
-            onTouchTap={() => {
-              browserHistory.push('/resources/forum');
             }}
           />
           <ListItem

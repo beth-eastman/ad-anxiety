@@ -1,19 +1,12 @@
-/* eslint-disable */
-
 /**
- * Contains video contents of the application.
+ * VideoPage contains a list of thumbnails & titles to videos the user can view.
+ * Selecting a video in the list will direct the user to the page containg
+ * that video.
  */
-
 import React from 'react';
 import { GridList, GridTile } from 'material-ui';
 import { browserHistory } from 'react-router';
-
-// images and icons
-import UnderstandingAnxiety from 'components/img/anxiety-understanding-anxiety.jpg';
-import AnxietyTreatment from 'components/img/anxiety-types-of-anxiety.jpg';
-import TreatmentOptions from 'components/img/anxiety-treatment-options.jpg';
-import RecognizingTrigers from 'components/img/anxiety-recognizing-triggers.jpg';
-import BackInControl from 'components/img/anxiety-back-in-control.jpg';
+import { videos } from 'data/videos';
 
 const styles = {
   root: {
@@ -25,45 +18,16 @@ const styles = {
   },
 };
 
-const videos = [
-  {
-    id: 'understand-anxiety',
-    title: 'Understanding Anxiety',
-    src: UnderstandingAnxiety,
-  },
-  {
-    id: 'types-of-anxiety',
-    title: 'Types of Anxiety',
-    src: AnxietyTreatment,
-  },
-  {
-    id: 'recognizing-triggers',
-    title: 'Recognizing Triggers',
-    src: RecognizingTrigers,
-  },
-  {
-    id: 'treatment-options',
-    title: 'Treatment Options',
-    src: TreatmentOptions,
-  },
-  {
-    id: 'back-in-control',
-    title: 'Back In Control',
-    src: BackInControl,
-  },
-  {
-    id: 'reduce-stress',
-    title: 'Reduce Stress',
-    src: 'https://brightcove04pmdo-a.akamaihd.net/923136676001/923136676001_3682877795001_vs-53c95f12e4b0afffb80dc10d-782203291001.jpg?pubId=923136676001&videoId=3682799653001',
-  },
-];
-
+// TODO: make list responsive
 export default class VideosPage extends React.Component {
 
+  /* Change the AppBar title */
   componentWillMount() {
     this.props.setPageTitle("Videos"); // eslint-disable-line
+    this.props.changeIcon('Home'); // eslint-disable-line
   }
 
+  /* Render a list of all videos contaning an image and video title */
   render() {
     return (
       <div style={styles.root}>
@@ -71,16 +35,16 @@ export default class VideosPage extends React.Component {
           cols={1}
           style={styles.gridList}
         >
-          {videos.map((tile) => (
+          {videos.map((video) => (
             <GridTile
-              key={tile.title}
-              title={tile.title}
+              key={video.id}
+              title={video.title}
               actionPosition="right"
               onTouchTap={() => {
-                browserHistory.push('/videos/'.concat(tile.id));
+                browserHistory.push('/videos/'.concat(video.id));
               }}
             >
-              <img src={tile.src} alt={tile.title} />
+              <img src={video.poster} alt={video.title} />
             </GridTile>
           ))}
         </GridList>

@@ -1,11 +1,60 @@
-/* Articles */
+/**
+ * Resources contains data for articles, books, links, and facts to be used in the Resource section of the application.
+ *
+ * Bethany Eastman
+ */
 
+/* Article content */
 const articles = [
-
+  {
+    key: 0,
+    title: 'When Worry Gets Out of Control',
+    text: 'People with anxiety disorders feel extremely fearful and unsure. Most people feel anxious about something for a short time now and again, but people with anxiety disorders feel this way most of the time. Their fears and worries make it hard for them to do everyday tasks. About 18% of American adults have anxiety disorders. Children also may have them. Treatment is available for people with anxiety disorders. Researchers are also looking for new treatments that will help relieve symptoms. This booklet is about one kind of anxiety disorder called generalized anxiety disorder, or GAD. For information about other kinds of anxiety disorders, please see the end of this booklet.',
+  },
+  {
+    key: 1,
+    title: 'Generalized Anxiety Disorder',
+    text: 'All of us worry about things like health, money, or family problems at one time or another. But people with GAD are extremely worried about these and many other things, even when there is little or no reason to worry about them. They may be very anxious about just getting through the day. They think things will always go badly. At times, worrying keeps people with GAD from doing everyday tasks. People with GAD may be very anxious about just getting through the day. They think things will always go badly.',
+  },
+  {
+    key: 2,
+    title: 'Common symptoms',
+    text: 'People with GAD: worry very much about everyday things for at least six months, even if there is little or no reason to worry about them, can’t control their constant worries, know that they worry much more than they should, can’t relax, have a hard time concentrating, are easily startled, have trouble falling asleep or staying asleep., common body symptoms are: feeling tired for no reason, headaches, muscle tension and aches, having a hard time swallowing, trembling or twitching, being irritable, sweating, nausea, feeling lightheaded, feeling out of breath, having to go to the bathroom a lot, hot flashes.',
+  },
+  {
+    key: 3,
+    title: 'When does GAD start?',
+    text: 'GAD develops slowly. It often starts during the time between childhood and middle age. Symptoms may get better or worse at different times, and often are worse during times of stress. People with GAD may visit a doctor many times before they find out they have this disorder. They ask their doctors to help them with the signs of GAD, such as headaches or trouble falling asleep, but don’t always get the help they need right away. It may take doctors some time to be sure that a person has GAD instead of something else.',
+  },
+  {
+    key: 4,
+    title: 'Is there help?',
+    text: 'There is help for people with GAD. The first step is to go to a doctor or health clinic to talk about symptoms. People who think they have GAD may want to bring this booklet to the doctor, to help them talk about the symptoms in it. The doctor will do an exam to make sure that another physical problem isn’t causing the symptoms. The doctor may make a referral to a mental health specialist. Doctors may prescribe medication to help relieve GAD. It’s important to know that some of these medicines may take a few weeks to start working. In most states only a medical doctor (a family doctor or psychiatrist) can prescribe medications. The kinds of medicines used to treat GAD are listed below. Some are used to treat other problems, such as depression, but also are helpful for GAD: antidepressants, anti-anxiety medicines, beta blockers. Doctors also may ask people with GAD to go to therapy with a licensed social worker, psychologist, or psychiatrist. This treatment can help people with GAD feel less anxious and fearful. There is no cure for GAD yet, but treatments can give relief to people who have it and help them live a more normal life. If you know someone with signs of GAD, talk to him or her about seeing a doctor. Offer to go along for support. To find out more about GAD, call 1-866-615-NIMH (1-866-615-6464) to have free information mailed to you.',
+  },
+  {
+    key: 5,
+    title: 'Who pays for treatment?',
+    text: 'Most insurance plans cover treatment for anxiety disorders. People who are going to have treatment should check with their own insurance companies to find out about coverage. For people who don’t have insurance, local city or county governments may offer treatment at a clinic or health center, where the cost is based on income. Medicaid plans also may pay for GAD treatment.',
+  },
+  {
+    key: 6,
+    title: 'Why do people get GAD?',
+    text: 'GAD sometimes runs in families, but no one knows for sure why some people have it, while others don’t. When chemicals in the brain are not at a certain level it can cause a person to have GAD. That is why medications often help with the symptoms because they help the brain chemicals stay at the correct levels. To improve treatment, scientists are studying how well different medicines and therapies work. In one kind of research, people with GAD choose to take part in a clinical trial to help doctors find out what treatments work best for most people, or what works best for different symptoms. Usually, the treatment is free. Scientists are learning more about how the brain works so that they can discover new treatments.',
+  },
+  {
+    key: 7,
+    title: 'For More Information on GAD and Other Anxiety Disorders',
+    text: 'Visit the National Library of Medicine’s MedlinePlus www.nlm.nih.gov/medlineplus, En Español, http://medlineplus.gov/spanis, For Information on Clinical Trials for GAD and, Other Anxiety Disorders, NIMH Clinical Trials Web page, www.nimh.nih.gov/studies/index.cfm, National Library of Medicine Clinical Trials Database, www.clinicaltrials.gov, Information from NIMH is available in multiple formats. You can browse online, download documents in PDF, and order paper brochures by mail. You can order NIMH publications online at www.nimh.nih.gov. If you do not have Internet access, please contact the NIMH Information Center at the numbers listed below.',
+  },
+  {
+    key: 8,
+    title: 'For Further Information',
+    text: 'National Institute of Mental Health, Science Writing, Press, & Dissemination Branch, 6001 Executive Boulevard, Room 8184, MSC 9663, Bethesda, MD 20892-9663, Phone: 301-443-4513 or 1-866-615-NIMH (6464) toll-free, TTY: 301-443-8431, TTY: 866-415-8051 toll-free, FAX: 301-443-4279, E-mail: nimhinfo@nih.gov Web site: www.nimh.nih.gov',
+  },
 ];
 
-/* Links */
 
+/* Link content */
 const links = [
   {
     title: 'Anxiety Disorders Association of America',
@@ -29,8 +78,7 @@ const links = [
   },
 ];
 
-/* Books */
-
+/* Books content*/
 const books = [
   {
     title: 'Mastery of Your Anxiety and Worry: Workbook (Treatments That Work).',
@@ -59,17 +107,14 @@ const books = [
   },
 ];
 
-/* Facts */
-
-// TODO: fix formatting of resource pages
-
+/* Fact content */
 const facts = [
   {
     sections: [
       {
         key: 0,
         title: 'Understanding Anxiety',
-        text: 'Many different words can be used to describe the feeling of anxiety. Anxiety can be described as motivation, excitement, tension, stress, worry, nerves, and phobias. Anxiety can be a normal reaction to new and positive challenges or stressful events. Anxiety can also be the result of faulty thinking and other controllable causes which become problematic and interfere with life and health. Everyone has felt anxious at some time in life. Anxiety can be experienced in a number of ways including: Butterflies in your stomach before a big dat, Knots in your stomach when your supervisor is upset, Pounding heart when you hear a strange noise outside your homeIn some situations, anxiety can be very useful. Anxiety is a sign that tells the body that it should be on alert. Anxiety helps to prepare a person for action. Anxiety can be a motivator to study for an exam and work hard to keep a supervisor happy. Anxiety can signal a person to act, which can help him or her cope with a difficult situation.',
+        text: 'Many different words can be used to describe the feeling of anxiety. Anxiety can be described as motivation, excitement, tension, stress, worry, nerves, and phobias. Anxiety can be a normal reaction to new and positive challenges or stressful events. Anxiety can also be the result of faulty thinking and other controllable causes which become problematic and interfere with life and health. Everyone has felt anxious at some time in life. Anxiety can be experienced in a number of ways including: Butterflies in your stomach before a big date, Knots in your stomach when your supervisor is upset, Pounding heart when you hear a strange noise outside your homeIn some situations, anxiety can be very useful. Anxiety is a sign that tells the body that it should be on alert. Anxiety helps to prepare a person for action. Anxiety can be a motivator to study for an exam and work hard to keep a supervisor happy. Anxiety can signal a person to act, which can help him or her cope with a difficult situation.',
       },
       {
         key: 0,
@@ -228,16 +273,9 @@ const facts = [
   },
 ];
 
-/* Resources */
-
-const resources = [
-
-];
-
 export {
   articles,
-  links,
   books,
+  links,
   facts,
-  resources,
 };

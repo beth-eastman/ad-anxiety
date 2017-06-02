@@ -1,7 +1,8 @@
 /**
  * Contains content for the homepage of the application.
+ *
+ * Bethany Eastman
  */
-
 import React from 'react';
 import { Card, CardHeader, CardText } from 'material-ui';
 import { FormattedMessage } from 'react-intl';
@@ -18,8 +19,10 @@ const styles = {
 
 export default class HomePage extends React.Component {
 
+  /* Change the AppBar title */
   componentWillMount() {
     this.props.setPageTitle("Home"); // eslint-disable-line
+    this.props.changeIcon('Home'); // eslint-disable-line
   }
 
   render() {

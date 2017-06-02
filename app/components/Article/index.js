@@ -1,23 +1,30 @@
+/**
+ * A page containing an Article. The page contains different sections of content.
+ *
+ * Bethany Eastman
+ */
 import React from 'react';
 import { Card, CardText } from 'material-ui';
-import { facts } from 'data';
+import { articles } from 'data/resources';
 
-export default class Facts extends React.Component { // eslint-disable-line
+export default class Article extends React.Component { // eslint-disable-line
 
+  /* Change App Bar title */
   componentWillMount() {
-    this.props.setPageTitle("Links"); // eslint-disable-line
+    this.props.setPageTitle("Articles"); // eslint-disable-line
+    this.props.changeIcon('Back', '/resources/'); // eslint-disable-line
   }
 
+  /* Iterate through the article and print the header and relative content for
+   * each article section */
   render() {
     return (
       <Card>
         <CardText>
-          {links.map((link) => (
-            <div id="link" key={link.title}>
-              <h2>{ link.title }</h2>
-              <a href={link.link}>{link.link}</a>
-              <br />
-              { link.text }
+          {articles.map((article) => (
+            <div id="link" key={article.key}>
+              <h2>{ article.title }</h2>
+              { article.text }
               <br />
             </div>
           ))}

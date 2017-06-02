@@ -1,6 +1,11 @@
+/**
+ * A resource page containing text about books.
+ *
+ * Bethany Eastman
+ */
 import React from 'react';
 import { Card, CardText } from 'material-ui';
-import { books } from 'data';
+import { books } from 'data/resources';
 
 const styles = {
   title: {
@@ -10,10 +15,13 @@ const styles = {
 
 export default class Links extends React.Component { // eslint-disable-line
 
+  /* Change the AppBar title */
   componentWillMount() {
     this.props.setPageTitle("Books"); // eslint-disable-line
+    this.props.changeIcon('Back', '/resources/'); // eslint-disable-line
   }
 
+  /* For each book, cite its title and description */
   render() {
     return (
       <Card>

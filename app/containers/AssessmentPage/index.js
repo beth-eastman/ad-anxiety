@@ -1,17 +1,13 @@
 /**
- * Contains assessments for the application.
+ * AssessmentPage contains a list of assessments where each list item directs to
+ * a specific page containing that assessment.
+ *
+ * Bethany Eastman
  */
-
 import React from 'react';
 import { GridList, GridTile } from 'material-ui';
 import { browserHistory } from 'react-router';
-
-// images // TODO: get correct images for assessment page
-import UnderstandingAnxiety from 'components/img/anxiety-understanding-anxiety.jpg';
-import AnxietyTreatment from 'components/img/anxiety-types-of-anxiety.jpg';
-import TreatmentOptions from 'components/img/anxiety-treatment-options.jpg';
-import RecognizingTrigers from 'components/img/anxiety-recognizing-triggers.jpg';
-import BackInControl from 'components/img/anxiety-back-in-control.jpg';
+import { assessments } from 'data/assessments';
 
 
 const styles = {
@@ -24,55 +20,17 @@ const styles = {
   },
 };
 
-const assessments = [
-  {
-    id: 'anxiety',
-    img: UnderstandingAnxiety,
-    title: 'Anxiety',
-  },
-  {
-    id: 'panic',
-    img: AnxietyTreatment,
-    title: 'Panic',
-  },
-  {
-    id: 'worry',
-    img: TreatmentOptions,
-    title: 'Worry',
-  },
-  {
-    id: 'depression',
-    img: BackInControl,
-    title: 'Depression',
-  },
-  {
-    id: 'sleep',
-    img: RecognizingTrigers,
-    title: 'Sleep',
-  },
-  {
-    id: 'pts',
-    img: AnxietyTreatment,
-    title: 'Post-Traumatic Stress',
-  },
-  {
-    id: 'stress',
-    img: TreatmentOptions,
-    title: 'Stress',
-  },
-  {
-    id: 'stigma',
-    img: RecognizingTrigers,
-    title: 'Stigma',
-  },
-];
-
+// TODO: make list responsive
 export default class AssessmentPage extends React.Component {     //eslint-disable-line
 
+  /* Change AppBar title */
   componentWillMount() {
     this.props.setPageTitle("Assessments"); // eslint-disable-line
+    this.props.changeIcon('Home'); // eslint-disable-line
   }
 
+  /* Create a list for each assessment, where each list item contains a link
+   * to the corresponding assessment page  */
   render() {
     return (
       <div style={styles.root}>

@@ -3,10 +3,7 @@
  */
 
 import React from 'react';
-// import { Card } from 'material-ui';
 import { Card, CardText } from 'material-ui';
-// import { FormattedMessage } from 'react-intl';
-// import messages from './messages';
 
 const styles = {
   content: {
@@ -19,8 +16,10 @@ const styles = {
 
 export default class Page extends React.Component {
 
+  /* Change the AppBar title */
   componentWillMount() {
     this.props.setPageTitle("Assessment"); // eslint-disable-line
+    this.props.changeIcon('Back', '/assessment'); // eslint-disable-line
   }
 
   render() {
@@ -36,19 +35,8 @@ export default class Page extends React.Component {
   }
 }
 
+/* What proptypes to expect */
 Page.propTypes = {
   assessmentId: React.PropTypes.string,
   params: React.PropTypes.any,
 };
-
-
-// <CardHeader
-//   title={<FormattedMessage {...messages.title} />}
-//   subtitle={<FormattedMessage {...messages.subtitle} />}
-// />
-// <CardText>
-//   <FormattedMessage {...messages.header} />
-//   <br />
-//   <br />
-//   <FormattedMessage {...messages.footer} />
-// </CardText>
