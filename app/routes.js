@@ -25,7 +25,7 @@ export default function createRoutes(store) {
       name: 'home',
       getComponent(nextState, cb) {
         const importModules = Promise.all([
-          import('containers/HomePage'),
+          import('components/HomePage'),
         ]);
 
         const renderRoute = loadModule(cb);
@@ -40,7 +40,7 @@ export default function createRoutes(store) {
       path: '/videos',
       name: 'videos',
       getComponent(nextState, cb) {
-        import('containers/VideosPage')
+        import('components/VideosPage')
           .then(loadModule(cb))
           .catch(errorLoading);
       },
@@ -48,7 +48,7 @@ export default function createRoutes(store) {
       path: '/assessment',
       name: 'assessments',
       getComponent(nextState, cb) {
-        import('containers/AssessmentPage')
+        import('components/AssessmentPage')
           .then(loadModule(cb))
           .catch(errorLoading);
       },
@@ -65,7 +65,7 @@ export default function createRoutes(store) {
       path: '/library',
       name: 'library',
       getComponent(nextState, cb) {
-        import('containers/LibraryPage')
+        import('components/LibraryPage')
           .then(loadModule(cb))
           .catch(errorLoading);
       },
@@ -81,7 +81,7 @@ export default function createRoutes(store) {
       path: '/resources',
       name: 'resources',
       getComponent(nextState, cb) {
-        import('containers/ResourcePage')
+        import('components/ResourcePage')
           .then(loadModule(cb))
           .catch(errorLoading);
       },

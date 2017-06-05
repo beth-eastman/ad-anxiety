@@ -6,6 +6,9 @@
  */
 import React from 'react'; // eslint-disable-line
 
+// key: the unique identifier for each libary section
+// title: the title of the libary section
+// content: minified html for each section
 const library = [
   {
     key: 1,

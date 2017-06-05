@@ -11,6 +11,10 @@ import TreatmentOptions from 'components/img/anxiety-treatment-options.jpg';
 import RecognizingTrigers from 'components/img/anxiety-recognizing-triggers.jpg';
 import BackInControl from 'components/img/anxiety-back-in-control.jpg';
 
+// id: the unique identifier key of each video
+// title: the title for a video
+// poster: the thumnail image for each video
+// src: the source file for the video
 const videos = [
   {
     id: 0,

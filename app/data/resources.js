@@ -5,6 +5,9 @@
  */
 
 /* Article content */
+// key: the unique identifier for each article
+// title: the title of the article
+// text: the text of each section of the article
 const articles = [
   {
     key: 0,
@@ -55,6 +58,9 @@ const articles = [
 
 
 /* Link content */
+// title: the title for each link
+// link: the url for each link
+// text: a description of the content located for each link
 const links = [
   {
     title: 'Anxiety Disorders Association of America',
@@ -78,7 +84,10 @@ const links = [
   },
 ];
 
-/* Books content*/
+/* Books content */
+// title: a book's title
+// text: a list of sources of a book
+// description: a descprition of the book
 const books = [
   {
     title: 'Mastery of Your Anxiety and Worry: Workbook (Treatments That Work).',
@@ -108,6 +117,7 @@ const books = [
 ];
 
 /* Fact content */
+// section:
 const facts = [
   {
     sections: [

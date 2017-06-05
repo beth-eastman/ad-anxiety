@@ -5,6 +5,9 @@ import TreatmentOptions from 'components/img/anxiety-treatment-options.jpg';
 import RecognizingTrigers from 'components/img/anxiety-recognizing-triggers.jpg';
 import BackInControl from 'components/img/anxiety-back-in-control.jpg';
 
+// id: a unique identifier to be used as a key
+// img: the thumbnail image
+// title: the title of each assessment
 const assessments = [
   {
     id: 'anxiety',
