@@ -27,6 +27,7 @@ export default class AssessmentPage extends React.Component {     //eslint-disab
   componentWillMount() {
     this.props.setPageTitle("Assessments"); // eslint-disable-line
     this.props.changeIcon('Home'); // eslint-disable-line
+    console.log(this.props);
   }
 
   /* Create a list for each assessment, where each list item contains a link
