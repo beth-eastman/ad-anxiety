@@ -1,0 +1,16 @@
+{
+  "short_name": "AD Anxiety",
+  "name": "After Deployment Anxiety",
+  description: "After Depoloyment Resources on Anxiety",
+  "icons": [
+    {
+      "src":"favicon.ico",
+      "sizes": "192x192",
+      "type": "image/icons"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#222",
+  "theme_color": "#222",
+  "display": "standalone"
+}
