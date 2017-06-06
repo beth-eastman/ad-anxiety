@@ -6,18 +6,44 @@
 import React from 'react';
 import { videos } from 'data/videos';
 
+const style = {
+  textAlign: 'center',
+};
+
+const getVideoWidth = () => {
+  if (window.innerWidth > 1300) {
+    return '1200px';
+  } else {                    // eslint-disable-line
+    return '100%';
+  }
+};
+
 export default class Video extends React.Component { // eslint-disable-line
 
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      width: getVideoWidth(),
+    };
+  }
+
+  /* When component mounts, change app bar to back icon and get the width
+     for the video based on device width */
   componentWillMount() {
-    this.props.changeIcon('Back', '/videos/'); // eslint-disable-line
+    this.props.changeIcon('Back', '/videos/');        // eslint-disable-line
+    const that = this;
+    window.addEventListener('resize', function () {  // eslint-disable-line
+      that.setState({ width: getVideoWidth() });
+    });
   }
 
   /* Create a video component with the thumbnail and source video */
   render() {
     return (
-      <div>
+      <div style={style}>
         <video
-          width="100%"
+          width={this.state.width}
           controls
           poster={videos[this.props.params.videoId].poster}
         >
