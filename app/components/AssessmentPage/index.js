@@ -6,7 +6,6 @@
  */
 import React from 'react';
 import { GridList, GridTile } from 'material-ui';
-import { browserHistory } from 'react-router';
 import { assessments } from 'data/assessments';
 
 
@@ -86,7 +85,7 @@ export default class AssessmentPage extends React.Component {     //eslint-disab
               key={tile.title}
               title={tile.title}
               onTouchTap={() => {
-                browserHistory.push('/assessment/'.concat(tile.id).concat('-assessment'));
+                this.props.router.push('/assessment/'.concat(tile.id).concat('-assessment'));
               }}
             >
               <img src={tile.img} alt={tile.title} />

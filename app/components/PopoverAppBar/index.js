@@ -50,7 +50,7 @@ export default class PopoverAppBar extends React.Component {
   handleChangeIcon = (newIcon, newPathName) => {
     let iconChange = null;
     if (newIcon === 'Home') {
-      iconChange = <Menu />;
+      iconChange = <Menu router={this.props.router} />;
     } else {
       iconChange = <Back newPathName={newPathName} />;
     }
@@ -68,6 +68,7 @@ export default class PopoverAppBar extends React.Component {
       (child) => React.cloneElement(child, {
         setPageTitle: this.handlePageChange,
         changeIcon: this.handleChangeIcon,
+        router: this.props.router,
       })
     );
 

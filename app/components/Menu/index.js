@@ -1,5 +1,4 @@
 import React from 'react';
-import { browserHistory } from 'react-router';
 
 import MaterialMenu from 'material-ui/Menu';
 import Divider from 'material-ui/Divider';
@@ -66,7 +65,7 @@ export default class Menu extends React.Component {
               primaryText="Home"
               leftIcon={<HomeIcon />}
               onTouchTap={() => {
-                browserHistory.push('/');
+                this.props.router.push('/');
                 this.handleRequestClose();
               }}
             />
@@ -76,7 +75,7 @@ export default class Menu extends React.Component {
               primaryText="Videos"
               leftIcon={<VideoCam />}
               onTouchTap={() => {
-                browserHistory.push('/videos');
+                this.props.router.push('/videos');
                 this.handleRequestClose();
               }}
             />
@@ -85,7 +84,7 @@ export default class Menu extends React.Component {
               primaryText="Assessments"
               leftIcon={<Assessment />}
               onTouchTap={() => {
-                browserHistory.push('/assessment');
+                this.props.router.push('/assessment');
                 this.handleRequestClose();
               }}
             />
@@ -94,7 +93,7 @@ export default class Menu extends React.Component {
               primaryText="Library"
               leftIcon={<LibraryBooks />}
               onTouchTap={() => {
-                browserHistory.push('/library');
+                this.props.router.push('/library');
                 this.handleRequestClose();
               }}
             />
@@ -103,7 +102,7 @@ export default class Menu extends React.Component {
               primaryText="Resources"
               leftIcon={<Resources />}
               onTouchTap={() => {
-                browserHistory.push('/resources');
+                this.props.router.push('/resources');
                 this.handleRequestClose();
               }}
             />

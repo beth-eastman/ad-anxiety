@@ -16,9 +16,10 @@ export default class App extends React.PureComponent { // eslint-disable-line re
 
   /* Render the AppBar and it's children (the component beneath the AppBar) */
   render() {
+    console.log(this);
     return (
       <div>
-        <PopoverAppBar>
+        <PopoverAppBar router={this.props.router}>
           {this.props.children}
         </PopoverAppBar>
       </div>

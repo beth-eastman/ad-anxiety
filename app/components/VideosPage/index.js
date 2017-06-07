@@ -5,7 +5,6 @@
  */
 import React from 'react';
 import { GridList, GridTile } from 'material-ui';
-import { browserHistory } from 'react-router';
 import { videos } from 'data/videos';
 
 const styles = {
@@ -80,7 +79,7 @@ export default class VideosPage extends React.Component {
               title={video.title}
               actionPosition="right"
               onTouchTap={() => {
-                browserHistory.push('/videos/'.concat(video.id));
+                this.props.router.push('/videos/'.concat(video.id));
               }}
             >
               <img src={video.poster} alt={video.title} />

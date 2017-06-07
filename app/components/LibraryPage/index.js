@@ -7,7 +7,6 @@
 
 import React from 'react';
 import { Card, List, ListItem } from 'material-ui';
-import { browserHistory } from 'react-router';
 import { library } from 'data/library';
 
 export default class LibraryPage extends React.Component {      // eslint-disable-line
@@ -32,7 +31,7 @@ export default class LibraryPage extends React.Component {      // eslint-disabl
                 key={section.key}
                 primaryText={section.title}
                 onTouchTap={() => {
-                  browserHistory.push('/library/'.concat(section.key));
+                  this.props.router.push('/library/'.concat(section.key));
                 }}
               />
             ))}

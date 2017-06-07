@@ -5,7 +5,6 @@
  */
 import React from 'react';
 import { Card, List, ListItem } from 'material-ui';
-import { browserHistory } from 'react-router';
 
 export default class ResourcePage extends React.Component {
 
@@ -24,19 +23,19 @@ export default class ResourcePage extends React.Component {
           <ListItem
             primaryText="Links"
             onTouchTap={() => {
-              browserHistory.push('/resources/links');
+              this.props.router.push('/resources/links');
             }}
           />
           <ListItem
             primaryText="Books"
             onTouchTap={() => {
-              browserHistory.push('/resources/books');
+              this.props.router.push('/resources/books');
             }}
           />
           <ListItem
             primaryText="Articles"
             onTouchTap={() => {
-              browserHistory.push('/resources/articles');
+              this.props.router.push('/resources/articles');
             }}
           />
           <ListItem
@@ -46,21 +45,21 @@ export default class ResourcePage extends React.Component {
                 key={0}
                 primaryText="Understanding Anxiety"
                 onTouchTap={() => {
-                  browserHistory.push('/resources/facts/0');
+                  this.props.router.push('/resources/facts/0');
                 }}
               />,
               <ListItem
                 key={1}
                 primaryText="Managing Anxiety and Worry"
                 onTouchTap={() => {
-                  browserHistory.push('/resources/facts/1');
+                  this.props.router.push('/resources/facts/1');
                 }}
               />,
               <ListItem
                 key={2}
                 primaryText="Causes of Anxiety"
                 onTouchTap={() => {
-                  browserHistory.push('/resources/facts/2');
+                  this.props.router.push('/resources/facts/2');
                 }}
               />,
             ]}
