@@ -1,7 +1,7 @@
 {
   "short_name": "AD Anxiety",
   "name": "After Deployment Anxiety",
-  description: "After Depoloyment Resources on Anxiety",
+  "description": "After Depoloyment Resources on Anxiety",
   "icons": [
     {
       "src":"favicon.ico",
