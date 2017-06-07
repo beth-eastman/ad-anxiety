@@ -6,21 +6,7 @@
 
 import React from 'react';
 import * as Colors from 'material-ui/styles/colors';
-// Material UI Components
 import AppBar from 'material-ui/AppBar';
-// import Popover from 'material-ui/Popover';
-// // import Menu from 'material-ui/Menu';
-// import MenuItem from 'material-ui/MenuItem';
-// import Divider from 'material-ui/Divider';
-// // Icons
-// import HomeIcon from 'material-ui/svg-icons/action/home';
-// import VideoCam from 'material-ui/svg-icons/av/videocam';
-// import Assessment from 'material-ui/svg-icons/action/assessment';
-// import IconButton from 'material-ui/IconButton';
-// import LibraryBooks from 'material-ui/svg-icons/av/library-books';
-// import Resources from 'material-ui/svg-icons/action/info';
-// import AppHub from 'material-ui/svg-icons/action/exit-to-app';
-// Needed to Handle onTouchTap
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import Back from 'components/Back';
@@ -52,11 +38,8 @@ export default class PopoverAppBar extends React.Component {
     if (newIcon === 'Home') {
       iconChange = <Menu router={this.props.router} />;
     } else {
-      iconChange = <Back newPathName={newPathName} />;
+      iconChange = <Back newPathName={newPathName} router={this.props.router} />;
     }
-
-    console.log('handle change icons to'.concat(newIcon.concat(' ').concat(newPathName))); // eslint-disable-line
-
     this.setState({
       leftIcon: iconChange,
       pathName: newPathName,

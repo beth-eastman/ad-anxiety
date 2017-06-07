@@ -40,7 +40,6 @@ export default class Video extends React.Component { // eslint-disable-line
     window.addEventListener(
       'resize',
       function () {
-        console.log('timeout');
         setTimeout(
           function() {
             that.setState({ cols: getVideoWidth() });

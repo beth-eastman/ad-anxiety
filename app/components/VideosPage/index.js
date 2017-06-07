@@ -53,7 +53,6 @@ export default class VideosPage extends React.Component {
     window.addEventListener(
       'resize',
       function () {
-        console.log('timeout');
         setTimeout(
           function() {
             that.setState({ cols: getCols(window.innerWidth) });

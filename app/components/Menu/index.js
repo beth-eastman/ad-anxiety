@@ -1,10 +1,8 @@
 import React from 'react';
-
 import MaterialMenu from 'material-ui/Menu';
 import Divider from 'material-ui/Divider';
 import MenuItem from 'material-ui/MenuItem';
 import Popover from 'material-ui/Popover';
-// import MenuIcon from 'material-ui/svg-icons/navigation/menu';
 import VideoCam from 'material-ui/svg-icons/av/videocam';
 import HomeIcon from 'material-ui/svg-icons/action/home';
 import Assessment from 'material-ui/svg-icons/action/assessment';

@@ -41,16 +41,12 @@ export default class AssessmentPage extends React.Component {     //eslint-disab
     this.state = {
       cols: getCols(window.innerWidth),
     };
-
-    // this.setColumnWidth(bind);
   }
 
   /* Change AppBar title */
   componentWillMount() {
     this.props.setPageTitle("Assessments");                        // eslint-disable-line
     this.props.changeIcon('Home');                                 // eslint-disable-line
-
-    // this.bind(setColumnWidth);
   }
 
   componentDidMount() {
@@ -59,7 +55,6 @@ export default class AssessmentPage extends React.Component {     //eslint-disab
     window.addEventListener(
       'resize',
       function () {
-        console.log('timeout');
         setTimeout(
           function() {
             that.setState({ cols: getCols(window.innerWidth) });
