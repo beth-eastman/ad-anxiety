@@ -4,12 +4,14 @@
 
 const path = require('path');
 const webpack = require('webpack');
+const projectName = process.env.CI_PROJECT_NAME;
+const projectBranch = process.env.CI_BUILD_REF_NAME;
 
 module.exports = (options) => ({
   entry: options.entry,
   output: Object.assign({ // Compile into js/build.js
     path: path.resolve(process.cwd(), 'build'),
-    publicPath: '/',
+    publicPath: projectName && projectBranch ? `/${projectName}/${projectBranch}/` : '/',
   }, options.output), // Merge with env dependent settings
   module: {
     loaders: [{
