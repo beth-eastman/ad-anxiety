@@ -44,15 +44,27 @@ export default class VideosPage extends React.Component {
 
   /* Change the AppBar title */
   componentWillMount() {
-    this.props.setPageTitle("Videos"); // eslint-disable-line
-    this.props.changeIcon('Home'); // eslint-disable-line
+    this.props.setPageTitle("Videos");                // eslint-disable-line
+    this.props.changeIcon('Home');                    // eslint-disable-line
+  }
 
+  componentDidMount() {
     // Add event listener for number of columns when window resizes
     const that = this;
-    window.addEventListener('resize', function () {               // eslint-disable-line
-      that.setState({ cols: getCols(window.innerWidth) });
-    });
+    window.addEventListener(
+      'resize',
+      function () {
+        console.log('timeout');
+        setTimeout(
+          function() {
+            that.setState({ cols: getCols(window.innerWidth) });
+          }
+        , 250);
+      }
+    );
   }
+
+  componentWillUnmount() {}
 
   /* Render a list of all videos contaning an image and video title */
   render() {

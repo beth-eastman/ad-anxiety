@@ -32,11 +32,35 @@ export default class Video extends React.Component { // eslint-disable-line
      for the video based on device width */
   componentWillMount() {
     this.props.changeIcon('Back', '/videos/');        // eslint-disable-line
-    const that = this;
-    window.addEventListener('resize', function () {  // eslint-disable-line
-      that.setState({ width: getVideoWidth() });
-    });
   }
+
+  componentDidMount() {
+    // Add event listener for number of columns when window resizes
+    const that = this;
+    window.addEventListener(
+      'resize',
+      function () {
+        console.log('timeout');
+        setTimeout(
+          function() {
+            that.setState({ cols: getVideoWidth() });
+          }
+        , 250);
+      }
+    );
+  }
+
+  // componentWillUnmount () {
+  //     this.loadInterval && clearInterval(this.loadInterval);
+  //     this.loadInterval = false;
+  // }
+  //
+  //
+  // componentWillUnmount() {}
+
+  // componentWillUnmount() {
+  //   window.removeEventListener('resize', setVideoWidth(this));
+  // }
 
   /* Create a video component with the thumbnail and source video */
   render() {

@@ -27,7 +27,7 @@ export default class Page extends React.Component {
       <div className="assessment">
         <Card style={styles}>
           <CardText>
-            <h1> { this.props.params.assessmentId } </h1>
+            { this.props.params.assessmentId } to be added
           </CardText>
         </Card>
       </div>

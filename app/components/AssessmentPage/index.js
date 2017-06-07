@@ -42,20 +42,35 @@ export default class AssessmentPage extends React.Component {     //eslint-disab
     this.state = {
       cols: getCols(window.innerWidth),
     };
+
+    // this.setColumnWidth(bind);
   }
 
   /* Change AppBar title */
   componentWillMount() {
     this.props.setPageTitle("Assessments");                        // eslint-disable-line
-    this.props.changeIcon('Home');                                // eslint-disable-line
-    // console.log(this.props);
+    this.props.changeIcon('Home');                                 // eslint-disable-line
 
+    // this.bind(setColumnWidth);
+  }
+
+  componentDidMount() {
     // Add event listener for number of columns when window resizes
     const that = this;
-    window.addEventListener('resize', function () {               // eslint-disable-line
-      that.setState({ cols: getCols(window.innerWidth) });
-    });
+    window.addEventListener(
+      'resize',
+      function () {
+        console.log('timeout');
+        setTimeout(
+          function() {
+            that.setState({ cols: getCols(window.innerWidth) });
+          }
+        , 250);
+      }
+    );
   }
+
+  componentWillUnmount() {}
 
   /* Create a list for each assessment, where each list item contains a link
    * to the corresponding assessment page  */
