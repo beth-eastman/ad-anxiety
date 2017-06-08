@@ -61,7 +61,7 @@ export default class PopoverAppBar extends React.Component {
           onTouchTap={this.handleTouchTap}
           titleStyle={{ textAlign: 'center' }}
           title={this.state.title}
-          style={{ backgroundColor: Colors.teal500 }}
+          style={{ backgroundColor: Colors.blueGrey500 }}
           iconElementLeft={this.state.leftIcon}
         />
         {childrenWithProps}

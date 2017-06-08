@@ -7,11 +7,19 @@ const webpack = require('webpack');
 const projectName = process.env.CI_PROJECT_NAME;
 const projectBranch = process.env.CI_BUILD_REF_NAME;
 
+// run command line with BUILD_ENVIRONMENT=GitHub before building
+const getPublicPath = () => {
+  if (process.env.BUILD_ENVIRONMENT && process.env.BUILD_ENVIRONMENT === 'GitHub') {
+    return '';
+  }
+  return projectName && projectBranch ? `/${projectName}/${projectBranch}/` : '/';
+};
+
 module.exports = (options) => ({
   entry: options.entry,
   output: Object.assign({ // Compile into js/build.js
     path: path.resolve(process.cwd(), 'build'),
-    publicPath: '/ad-anxiety/build/',
+    publicPath: getPublicPath(),
     // publicPath: projectName && projectBranch ? `/${projectName}/${projectBranch}/` : '/',
     // publicPath: projectName && projectBranch ? `/ad-anxiety/build/` : '/',
   }, options.output), // Merge with env dependent settings
