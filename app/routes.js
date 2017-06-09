@@ -3,6 +3,7 @@
 // See http://blog.mxstbr.com/2016/01/react-apps-with-pages for more information
 // about the code splitting business
 import { getAsyncInjectors } from 'utils/asyncInjectors';
+import { createPlainRoutes } from 'local-t2-assessment-suite';
 
 const errorLoading = (err) => {
   console.error('Dynamic page loading failed', err); // eslint-disable-line no-console
@@ -11,6 +12,25 @@ const errorLoading = (err) => {
 const loadModule = (cb) => (componentModule) => {
   cb(null, componentModule.default);
 };
+// assessment modules
+// 9, 10, 8, 12, 7
+//
+// const itemClick = () => {
+//
+// };
+//
+// const onCancel = () => {};
+//
+// const onSubmit = () => {};
+//
+// const configSubroutes = {
+//   ids: [9, 10, 8, 12, 7],
+//   itemClick,
+//   onCancel,
+//   loadImages: false,
+//   onSubmit,
+// };
+//
 
 export default function createRoutes(store) {
   // Create reusable async injectors using getAsyncInjectors factory
@@ -53,7 +73,6 @@ export default function createRoutes(store) {
       path: '/assessment/:assessmentId',
       name: 'assessmentsquiz',
       getComponent(nextState, cb) {
-        // TODO: FIX URL
         import('components/Page')
           .then(loadModule(cb))
           .catch(errorLoading);
