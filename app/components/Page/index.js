@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
  * Contains content for the homepage of the application.
  */
@@ -15,12 +16,13 @@ const styles = {
   },
 };
 
+// TODO: Add correct assessments
 export default class Page extends React.Component {
 
   /* Change the AppBar title */
   componentWillMount() {
-    this.props.setPageTitle("Assessment"); // eslint-disable-line
-    this.props.changeIcon('Back', '/assessment'); // eslint-disable-line
+    this.props.setPageTitle("Assessment");
+    this.props.changeIcon('Back', '/assessment');
   }
 
   render() {
@@ -34,25 +36,25 @@ export default class Page extends React.Component {
         assessment = <SocialSupport />;
         break;
       case 'worry':
-        assessment = <h2>Coming Soon</h2>;
+        assessment = <FriendShip />;
         break;
       case 'depression':
-        assessment = <h2>Coming Soon</h2>;
+        assessment = <FriendShip />;
         break;
       case 'sleep':
-        assessment = <h2>Coming Soon</h2>;
+        assessment = <SocialSupport />;
         break;
       case 'pts':
-        assessment = <h2>Coming Soon</h2>;
+        assessment = <FriendShip />;
         break;
       case 'stress':
-        assessment = <h2>Coming Soon</h2>;
+        assessment = <SocialSupport />;
         break;
       case 'stigma':
-        assessment = <h2>Coming Soon</h2>;
+        assessment = <FriendShip />;
         break;
       default:
-        assessment = <h2>Coming Soon</h2>;
+        assessment = <h4>Assessment not available yet</h4>;
         break;
     }
 
@@ -60,6 +62,8 @@ export default class Page extends React.Component {
       <div className="assessment">
         <Card style={styles}>
           <CardText>
+            Demo of npm assessment local-t2-assessment-suite module. Correct
+            assessments are currently being completed
             {assessment}
           </CardText>
         </Card>

@@ -5,6 +5,7 @@ import TreatmentOptions from 'components/img/anxiety-treatment-options.jpg';
 import RecognizingTrigers from 'components/img/anxiety-recognizing-triggers.jpg';
 import BackInControl from 'components/img/anxiety-back-in-control.jpg';
 import Worry from 'components/img/worry.jpg';
+import Panic from 'components/img/panic.jpg';
 import Stress from 'components/img/stress.jpg';
 import Deployment from 'components/img/original.jpg';
 
@@ -14,7 +15,7 @@ import Deployment from 'components/img/original.jpg';
 const assessments = [
   {
     id: 'anxiety',
-    img: UnderstandingAnxiety,
+    img: Panic,
     title: 'Anxiety',
   },
   {
@@ -49,7 +50,7 @@ const assessments = [
   },
   {
     id: 'stigma',
-    img: RecognizingTrigers,
+    img: UnderstandingAnxiety,
     title: 'Stigma',
   },
 ];
