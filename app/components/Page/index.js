@@ -4,7 +4,8 @@
 
 import React from 'react';
 import { Card, CardText } from 'material-ui';
-
+import { assessments } from 'local-t2-assessment-suite';
+const { FriendShip, SocialSupport } = assessments;
 const styles = {
   content: {
     flex: 1,
@@ -23,11 +24,43 @@ export default class Page extends React.Component {
   }
 
   render() {
+    let assessment = null;
+
+    switch (this.props.params.assessmentId) {
+      case 'anxiety':
+        assessment = <FriendShip />;
+        break;
+      case 'panic':
+        assessment = <SocialSupport />;
+        break;
+      case 'worry':
+        assessment = <h2>Coming Soon</h2>;
+        break;
+      case 'depression':
+        assessment = <h2>Coming Soon</h2>;
+        break;
+      case 'sleep':
+        assessment = <h2>Coming Soon</h2>;
+        break;
+      case 'pts':
+        assessment = <h2>Coming Soon</h2>;
+        break;
+      case 'stress':
+        assessment = <h2>Coming Soon</h2>;
+        break;
+      case 'stigma':
+        assessment = <h2>Coming Soon</h2>;
+        break;
+      default:
+        assessment = <h2>Coming Soon</h2>;
+        break;
+    }
+
     return (
       <div className="assessment">
         <Card style={styles}>
           <CardText>
-            { this.props.params.assessmentId } to be added
+            {assessment}
           </CardText>
         </Card>
       </div>

@@ -80,7 +80,7 @@ export default class AssessmentPage extends React.Component {     //eslint-disab
               key={tile.title}
               title={tile.title}
               onTouchTap={() => {
-                this.props.router.push('/assessment/'.concat(tile.id).concat('-assessment'));
+                this.props.router.push('/assessment/'.concat(tile.id));
               }}
             >
               <img src={tile.img} alt={tile.title} />

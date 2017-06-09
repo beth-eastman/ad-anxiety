@@ -4,6 +4,9 @@ import AnxietyTreatment from 'components/img/anxiety-types-of-anxiety.jpg';
 import TreatmentOptions from 'components/img/anxiety-treatment-options.jpg';
 import RecognizingTrigers from 'components/img/anxiety-recognizing-triggers.jpg';
 import BackInControl from 'components/img/anxiety-back-in-control.jpg';
+import Worry from 'components/img/worry.jpg';
+import Stress from 'components/img/stress.jpg';
+import Deployment from 'components/img/original.jpg';
 
 // id: a unique identifier to be used as a key
 // img: the thumbnail image
@@ -21,7 +24,7 @@ const assessments = [
   },
   {
     id: 'worry',
-    img: TreatmentOptions,
+    img: Worry,
     title: 'Worry',
   },
   {
@@ -36,12 +39,12 @@ const assessments = [
   },
   {
     id: 'pts',
-    img: AnxietyTreatment,
+    img: Deployment,
     title: 'Post-Traumatic Stress',
   },
   {
     id: 'stress',
-    img: TreatmentOptions,
+    img: Stress,
     title: 'Stress',
   },
   {
