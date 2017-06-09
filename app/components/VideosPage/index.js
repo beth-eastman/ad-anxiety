@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
  * VideoPage contains a list of thumbnails & titles to videos the user can view.
  * Selecting a video in the list will direct the user to the page containg
@@ -43,8 +44,8 @@ export default class VideosPage extends React.Component {
 
   /* Change the AppBar title */
   componentWillMount() {
-    this.props.setPageTitle("Videos");                // eslint-disable-line
-    this.props.changeIcon('Home');                    // eslint-disable-line
+    this.props.setPageTitle("Videos");
+    this.props.changeIcon('Home');
   }
 
   componentDidMount() {

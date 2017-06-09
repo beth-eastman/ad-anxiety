@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
  * AssessmentPage contains a list of assessments where each list item directs to
  * a specific page containing that assessment.
@@ -33,7 +34,7 @@ const getCols = (width) => {
   return 1;
 };
 
-export default class AssessmentPage extends React.Component {     //eslint-disable-line
+export default class AssessmentPage extends React.Component {
 
   constructor(props) {
     super(props);
@@ -45,8 +46,8 @@ export default class AssessmentPage extends React.Component {     //eslint-disab
 
   /* Change AppBar title */
   componentWillMount() {
-    this.props.setPageTitle("Assessments");                        // eslint-disable-line
-    this.props.changeIcon('Home');                                 // eslint-disable-line
+    this.props.setPageTitle("Assessments");
+    this.props.changeIcon('Home');
   }
 
   componentDidMount() {
