@@ -6,6 +6,7 @@ const path = require('path');
 const webpack = require('webpack');
 const projectName = process.env.CI_PROJECT_NAME;
 const projectBranch = process.env.CI_BUILD_REF_NAME;
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 
 // run command line with BUILD_ENVIRONMENT=GitHub before building
 const getPublicPath = () => {
@@ -77,6 +78,18 @@ module.exports = (options) => ({
       // make fetch available
       fetch: 'exports-loader?self.fetch!whatwg-fetch',
     }),
+
+
+    // new SWPrecacheWebpackPlugin(
+    //   {
+    //     cacheId: 'anxiety',
+    //     dontCacheBustUrlsMatching: /\.\w{8}\./,
+    //     filename: 'service-worker.js',
+    //     minify: true,
+    //     navigateFallback: getPublicPath().concat('index.html'),
+    //     staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
+    //   }
+    // ),
 
     // Always expose NODE_ENV to webpack, in order to use `process.env.NODE_ENV`
     // inside your code for any environment checks; UglifyJS will automatically

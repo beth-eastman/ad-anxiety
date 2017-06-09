@@ -17,6 +17,7 @@ const styles = {
 };
 
 // TODO: Add correct assessments
+// TODO: Fix cancel button
 export default class Page extends React.Component {
 
   /* Change the AppBar title */

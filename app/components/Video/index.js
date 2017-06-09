@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
  * A component containing a single video.
  *
@@ -13,12 +14,12 @@ const style = {
 const getVideoWidth = () => {
   if (window.innerWidth > 1300) {
     return '1200px';
-  } else {                    // eslint-disable-line
+  } else {
     return '100%';
   }
 };
 
-export default class Video extends React.Component { // eslint-disable-line
+export default class Video extends React.Component {
 
   constructor(props) {
     super(props);
@@ -31,7 +32,7 @@ export default class Video extends React.Component { // eslint-disable-line
   /* When component mounts, change app bar to back icon and get the width
      for the video based on device width */
   componentWillMount() {
-    this.props.changeIcon('Back', '/videos/');        // eslint-disable-line
+    this.props.changeIcon('Back', '/videos/');
   }
 
   componentDidMount() {
@@ -42,7 +43,9 @@ export default class Video extends React.Component { // eslint-disable-line
       function () {
         setTimeout(
           function() {
-            that.setState({ cols: getVideoWidth() });
+            if (this.cols != getVideoWidth()) {
+              that.setState({ cols: getVideoWidth() });
+            }
           }
         , 250);
       }
