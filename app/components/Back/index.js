@@ -1,5 +1,8 @@
 /* eslint-disable */
-
+/* Back Button takes a path and when a user selected the button,
+the user will be directed to the specific page. IE - if the user
+is on the Links page, the Back button should be passed '/resources/' so
+that the user can go back to the Resource page */
 import React from 'react';
 import IconButton from 'material-ui/IconButton';
 import ArrowBack from 'material-ui/svg-icons/navigation/arrow-back';

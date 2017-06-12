@@ -1,6 +1,7 @@
 /* eslint-disable */
 /**
- * Contains content for the homepage of the application.
+ * Page of an assessment, uses Jack Lightfoot's npm module contatining
+ * different T2 Assessments
  */
 
 import React from 'react';
@@ -63,8 +64,7 @@ export default class Page extends React.Component {
       <div className="assessment">
         <Card style={styles}>
           <CardText>
-            Demo of npm assessment local-t2-assessment-suite module. Correct
-            assessments are currently being completed
+            Placeholder assessments to demo T2 npm module
             {assessment}
           </CardText>
         </Card>

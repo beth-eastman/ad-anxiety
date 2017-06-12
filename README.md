@@ -11,15 +11,17 @@ after Jack Lightfoot's [Alcohol and Drugs](https://github.com/jlightfoot2/ad-dru
 
 ## Installation
 
-```npm install```
+To install all packages and dependencies, run:
 
-Start the application by running
+```npm install```
 
 ## Run
 
+After installing dependencies, start the application by running:
+
 ```npm run start```
 
-View the application at `localhost:3000`
+View the application at [localhost:3000](localhost:3000)
 
 ## Build
 
@@ -32,7 +34,3 @@ Run tests with
 ```npm run test```
 
 For more testing commands visit the React Boilerplate [docs](https://github.com/react-boilerplate/react-boilerplate/blob/master/docs/general/commands.md#testing)
-
-# License
-
-A short snippet describing the license (MIT, Apache, etc.)

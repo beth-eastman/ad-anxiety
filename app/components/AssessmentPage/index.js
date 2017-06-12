@@ -36,6 +36,7 @@ const getCols = (width) => {
 
 export default class AssessmentPage extends React.Component {
 
+  /* Set number of columns */
   constructor(props) {
     super(props);
 
