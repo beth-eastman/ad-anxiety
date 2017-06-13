@@ -83,7 +83,7 @@ export default class Menu extends React.Component {
               primaryText="Assessments"
               leftIcon={<Assessment />}
               onTouchTap={() => {
-                this.props.router.push('/assessment');
+                this.props.router.push('/assessments');
                 this.handleRequestClose();
               }}
             />

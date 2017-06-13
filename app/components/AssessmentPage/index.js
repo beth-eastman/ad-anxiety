@@ -82,7 +82,7 @@ export default class AssessmentPage extends React.Component {
               key={tile.title}
               title={tile.title}
               onTouchTap={() => {
-                this.props.router.push('/assessment/'.concat(tile.id));
+                this.props.router.push('/assessments/'.concat(tile.id));
               }}
             >
               <img src={tile.img} alt={tile.title} />

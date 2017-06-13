@@ -12,9 +12,10 @@ const errorLoading = (err) => {
 const loadModule = (cb) => (componentModule) => {
   cb(null, componentModule.default);
 };
+
 // assessment modules
 // 9, 10, 8, 12, 7
-//
+
 // const itemClick = () => {
 //
 // };
@@ -24,13 +25,14 @@ const loadModule = (cb) => (componentModule) => {
 // const onSubmit = () => {};
 //
 // const configSubroutes = {
-//   ids: [9, 10, 8, 12, 7],
+//   ids: [9, 10, 8, 12, 7, 16, 15, 14],
 //   itemClick,
 //   onCancel,
-//   loadImages: false,
+//   loadImages: true,
 //   onSubmit,
 // };
 //
+// const { AssessmentsRoute, AssessmentPageRoute } = createPlainRoutes(configSubroutes);
 
 export default function createRoutes(store) {
   // Create reusable async injectors using getAsyncInjectors factory
@@ -62,7 +64,7 @@ export default function createRoutes(store) {
           .catch(errorLoading);
       },
     }, {
-      path: '/assessment',
+      path: '/assessments',
       name: 'assessments',
       getComponent(nextState, cb) {
         import('components/AssessmentPage')
@@ -70,7 +72,7 @@ export default function createRoutes(store) {
           .catch(errorLoading);
       },
     }, {
-      path: '/assessment/:assessmentId',
+      path: '/assessments/:assessmentId',
       name: 'assessmentsquiz',
       getComponent(nextState, cb) {
         import('components/Page')

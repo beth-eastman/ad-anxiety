@@ -7,7 +7,8 @@
 import React from 'react';
 import { Card, CardText } from 'material-ui';
 import { assessments } from 'local-t2-assessment-suite';
-const { FriendShip, SocialSupport } = assessments;
+const { Anxiety, Sleep, Panic, Worry, Stress, Stigma, Depression, PostTraumaticStress } = assessments;
+
 const styles = {
   content: {
     flex: 1,
@@ -17,14 +18,16 @@ const styles = {
   },
 };
 
-// TODO: Add correct assessments
-// TODO: Fix cancel button
 export default class Page extends React.Component {
 
   /* Change the AppBar title */
   componentWillMount() {
     this.props.setPageTitle("Assessment");
-    this.props.changeIcon('Back', '/assessment');
+    this.props.changeIcon('Back', '/assessments');
+  }
+
+  handleCancel = (error, assessment) => {
+      this.props.router.push('/assessments/');
   }
 
   render() {
@@ -32,28 +35,28 @@ export default class Page extends React.Component {
 
     switch (this.props.params.assessmentId) {
       case 'anxiety':
-        assessment = <FriendShip />;
+        assessment = <Anxiety setPageTitle={this.props.setPageTitle} onCancel={this.handleCancel} />;
         break;
       case 'panic':
-        assessment = <SocialSupport />;
+        assessment = <Panic setPageTitle={this.props.setPageTitle} onCancel={this.handleCancel} />;
         break;
       case 'worry':
-        assessment = <FriendShip />;
+        assessment = <Worry setPageTitle={this.props.setPageTitle} onCancel={this.handleCancel} />;
         break;
       case 'depression':
-        assessment = <FriendShip />;
+        assessment = <Depression setPageTitle={this.props.setPageTitle} onCancel={this.handleCancel} />;
         break;
       case 'sleep':
-        assessment = <SocialSupport />;
+        assessment = <Sleep setPageTitle={this.props.setPageTitle} onCancel={this.handleCancel} />;
         break;
       case 'pts':
-        assessment = <FriendShip />;
+        assessment = <PostTraumaticStress setPageTitle={this.props.setPageTitle} onCancel={this.handleCancel} />;
         break;
       case 'stress':
-        assessment = <SocialSupport />;
+        assessment = <Stress setPageTitle={this.props.setPageTitle} onCancel={this.handleCancel} />;
         break;
       case 'stigma':
-        assessment = <FriendShip />;
+        assessment = <Stigma setPageTitle={this.props.setPageTitle} onCancel={this.handleCancel} />;
         break;
       default:
         assessment = <h4>Assessment not available yet</h4>;
@@ -64,7 +67,6 @@ export default class Page extends React.Component {
       <div className="assessment">
         <Card style={styles}>
           <CardText>
-            Placeholder assessments to demo T2 npm module
             {assessment}
           </CardText>
         </Card>
