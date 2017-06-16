@@ -4,7 +4,7 @@
  *
  * Bethany Eastman
  */
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { videos } from 'data/videos';
 
 const style = {
@@ -83,6 +83,6 @@ export default class Video extends React.Component {
 
 /* Check for valid prop types */
 Video.propTypes = {
-  params: React.PropTypes.any,
-  videoId: React.PropTypes.string,
+  params: PropTypes.any,
+  videoId: PropTypes.string,
 };

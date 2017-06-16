@@ -3,7 +3,7 @@
  *
  * Bethany Eastman
  */
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Card, List, ListItem } from 'material-ui';
 
 export default class ResourcePage extends React.Component {
@@ -69,3 +69,7 @@ export default class ResourcePage extends React.Component {
     );
   }
 }
+
+ResourcePage.propTypes = {
+  router: PropTypes.any,
+};

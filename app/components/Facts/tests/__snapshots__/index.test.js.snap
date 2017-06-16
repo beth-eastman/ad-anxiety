@@ -1,0 +1,113 @@
+exports[`test renders Facts 1`] = `
+<div
+  style={
+    Object {
+      "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+      "backgroundColor": "#ffffff",
+      "borderRadius": 2,
+      "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
+             0 1px 4px rgba(0, 0, 0, 0.12)",
+      "boxSizing": "border-box",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "fontFamily": "Roboto, sans-serif",
+      "muiPrepared": true,
+      "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+      "zIndex": 1,
+    }
+  }>
+  <div
+    style={
+      Object {
+        "paddingBottom": 8,
+      }
+    }>
+    <div
+      style={
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+          "fontSize": 14,
+          "muiPrepared": true,
+          "padding": 16,
+        }
+      }>
+      <div
+        id="fact">
+        <h2>
+          Understanding Anxiety
+        </h2>
+        Many different words can be used to describe the feeling of anxiety. Anxiety can be described as motivation, excitement, tension, stress, worry, nerves, and phobias. Anxiety can be a normal reaction to new and positive challenges or stressful events. Anxiety can also be the result of faulty thinking and other controllable causes which become problematic and interfere with life and health. Everyone has felt anxious at some time in life. Anxiety can be experienced in a number of ways including: Butterflies in your stomach before a big date, Knots in your stomach when your supervisor is upset, Pounding heart when you hear a strange noise outside your homeIn some situations, anxiety can be very useful. Anxiety is a sign that tells the body that it should be on alert. Anxiety helps to prepare a person for action. Anxiety can be a motivator to study for an exam and work hard to keep a supervisor happy. Anxiety can signal a person to act, which can help him or her cope with a difficult situation.
+      </div>
+      <div
+        id="fact">
+        <h2>
+          Are you a worrier?
+        </h2>
+        Worrying is a form of anxiety. Worry can be a natural response to life conditions. Everyone worries about something at some time. Worry becomes problematic when worrying and its associated behaviors interfere with the ability to live a happy, healthy life. Signs that worry might be problematic in your life: You are chronically on alert and thinking about potential future dangers or threats. You are consistently making negative predictions about the future. You tend to overestimate the likelihood that something bad will happen. You repeat worried thoughts over and over again in your head.
+      </div>
+      <div
+        id="fact">
+        <h2>
+          When is anxiety a problem?
+        </h2>
+        Some amount of anxiety is normal. However, an anxiety disorder can keep a person from coping with the ups and downs of life. An anxiety disorder can make a person feel anxious most of the time without any particular cause. In some cases, the anxious feelings may be so uncomfortable that an individual will do anything necessary to avoid those feelings including stopping or changing everyday activities. Anxiety can become so severe that it prevents a person from leaving his or her home. Severe anxiety can prevent a person from going to work or engaging in meaningful activities with friends and family.
+      </div>
+      <div
+        id="fact">
+        <h2>
+          What are the most common types of anxiety disorders?
+        </h2>
+        The anxiety disorders that interfere with living life are Generalized Anxiety Disorder, Panic Disorder, Obsessive-Compulsive Disorder, Social Anxiety Disorder, Phobias, and Post-traumatic Stress Disorder. You can find information about each of these by visiting www.adaa.org
+      </div>
+      <div
+        id="fact">
+        <h2>
+          Who is affected?
+        </h2>
+        Anyone can be affected by problems with anxiety. In fact, as many as 25% of all adults in America experience intense levels of anxiety at some time in life. About 18% of American adults have an anxiety disorder in any given year. Individuals with one type of anxiety disorder are at a greater risk for other types of anxiety disorders and related problems.
+      </div>
+      <div
+        id="fact">
+        <h2>
+          Can anxiety problems be treated?
+        </h2>
+        Yes. The first step on the road to recovery is to understand the causes of anxiety disorders, the symptoms, and the factors that can make anxiety disorders worse. Treatments involve cognitive therapies, medication, or a combination of the two. Treatments are very effective when offered by health care professionals who are specifically trained to treat anxiety disorders.
+      </div>
+      <div
+        id="fact">
+        <h2>
+          How Does Anxiety Affect Family Members?
+        </h2>
+        Anxiety symptoms are wide-ranging and affect people in almost all areas of their lives, so it is no surprise that anxiety can affect relationships with family, significant others, and friends. Anxiety disorders can be stressful for family members, too.
+      </div>
+      <div
+        id="fact">
+        <h2>
+          Social Isolation
+        </h2>
+        Those with anxiety disorders often avoid engaging with others because of fear of embarrassing themselves. This can put a strain on significant others and on children. Those with the anxiety disorders may want to be alone and may not want to engage in activities outside the house with family members and friends. In addition to avoiding others, those with anxiety often avoid stressful situations or public places. This avoidance can greatly inhibit daily activities for the family members and reduce the number and quality of interactions with family and friends.
+      </div>
+      <div
+        id="fact">
+        <h2>
+          Chronic Tension
+        </h2>
+        People with anxiety disorders often feel restless and tense. Family members feel that tension, too, and often don’t know how to respond. Family members describe their experience as “walking on eggshells” around the individual with the anxiety disorder. Tension in the family can cause problems bonding and communicating.
+      </div>
+      <div
+        id="fact">
+        <h2>
+          What to do if a Family Member Has Anxiety Problems
+        </h2>
+        Engage in empathy: Try to see the world through the eyes of the anxious family member. The world likely seems like a scary place for them. Understanding his or her feelings and thoughts can increase the understanding of what they are going through. Gather information: Take time to learn about the family member’s condition. Talk to them and read about the condition and its treatment. Get involved: Encourage the family member to get help. Attending counseling and doctor’s appointments with the family member can show support and can also provide information about the anxiety condition and ways to improve it. Anxious individuals can experience difficulties concentrating and responding to multiple sources of information. A family member can listen to information that an anxious individual might not be able to hear.
+      </div>
+      <div
+        id="fact">
+        <h2>
+          Resources / Websites
+        </h2>
+        Anxiety Disorder Association of America (http://www.adaa.org/) National Institute of Mental Health (http://www.nimh.nih.gov/health/topics/anxiety-disorders/index.shtml)
+      </div>
+    </div>
+  </div>
+</div>
+`;

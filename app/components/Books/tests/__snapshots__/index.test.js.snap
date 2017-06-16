@@ -1,0 +1,111 @@
+exports[`test renders Books 1`] = `
+<div
+  style={
+    Object {
+      "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+      "backgroundColor": "#ffffff",
+      "borderRadius": 2,
+      "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
+             0 1px 4px rgba(0, 0, 0, 0.12)",
+      "boxSizing": "border-box",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "fontFamily": "Roboto, sans-serif",
+      "muiPrepared": true,
+      "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+      "zIndex": 1,
+    }
+  }>
+  <div
+    style={
+      Object {
+        "paddingBottom": 8,
+      }
+    }>
+    <div
+      style={
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+          "fontSize": 14,
+          "muiPrepared": true,
+          "padding": 16,
+        }
+      }>
+      <div
+        id="link">
+        <h4
+          style={
+            Object {
+              "textDecoration": "underline",
+            }
+          }>
+          Mastery of Your Anxiety and Worry: Workbook (Treatments That Work).
+        </h4>
+        by Craske, Michelle G. and Barlow, David H. 2006 Oxford University Press: New York
+        <br />
+        This is a workbook allowing you to work on exercises by two of the best know researchers in the field.
+        <br />
+      </div>
+      <div
+        id="link">
+        <h4
+          style={
+            Object {
+              "textDecoration": "underline",
+            }
+          }>
+          Don\'t Panic: Taking Control of Anxiety Attacks. Third Edition.
+        </h4>
+        Wilson, Reid. 2009 Harper Collins Publishers: New York
+        <br />
+        A comprehensive self-help approach to treating Panic Disorder.
+        <br />
+      </div>
+      <div
+        id="link">
+        <h4
+          style={
+            Object {
+              "textDecoration": "underline",
+            }
+          }>
+          Stop Obsessing: How to Overcome Your Obsessions and Compulsions (Revised Edition). Foa, Edna B and Wilson, Reid.
+        </h4>
+        2001 Bantam Paperbacks
+        <br />
+        This book provides concrete guidance for overcoming OCD.
+        <br />
+      </div>
+      <div
+        id="link">
+        <h4
+          style={
+            Object {
+              "textDecoration": "underline",
+            }
+          }>
+          The OCD Workbook: Your Guide to Breaking Free from Obsessive-Compulsive Disorder.
+        </h4>
+        Hyman, Bruce M. and Pedrick, Cherry. 2005 New Harbinger Publications
+        <br />
+        A workbook format which allows you to work with your own symptoms of OCD.
+        <br />
+      </div>
+      <div
+        id="link">
+        <h4
+          style={
+            Object {
+              "textDecoration": "underline",
+            }
+          }>
+          Dying of Embarrassment: Help for Social Anxiety & Phobia.
+        </h4>
+        Markway, Barbara G., Pollard, Alec C., Flynn, Teresa, and Carmin, Cheryl N. 1992. New Harbinger Publications
+        <br />
+        A well-written book providing guidance for coping with Social Phobia.
+        <br />
+      </div>
+    </div>
+  </div>
+</div>
+`;

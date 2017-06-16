@@ -3,7 +3,7 @@
  *
  * Bethany Eastman
  */
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Card, CardText } from 'material-ui';
 import { facts } from 'data/resources';
 
@@ -36,6 +36,6 @@ export default class Facts extends React.Component { // eslint-disable-line
 
 /* Check for valid prop types */
 Facts.propTypes = {
-  params: React.PropTypes.any,
-  factId: React.PropTypes.number,
+  params: PropTypes.any,
+  factId: PropTypes.number,
 };

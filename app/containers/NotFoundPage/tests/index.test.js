@@ -8,7 +8,7 @@ import messages from '../messages';
 describe('<NotFoundPage />', () => {
   it('should render the page message', () => {
     const renderedComponent = shallow(
-      <NotFoundPage />
+      <NotFoundPage changeIcon={function () {}} /> // eslint-disable-line
     );
     expect(renderedComponent.contains(
       <FormattedMessage {...messages.header} />

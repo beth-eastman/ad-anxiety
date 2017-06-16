@@ -6,7 +6,7 @@ const path = require('path');
 const webpack = require('webpack');
 const projectName = process.env.CI_PROJECT_NAME;
 const projectBranch = process.env.CI_BUILD_REF_NAME;
-const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
+// const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 
 // run command line with BUILD_ENVIRONMENT=GitHub before building
 const getPublicPath = () => {
