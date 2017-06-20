@@ -1,0 +1,17 @@
+exports[`test renders Video 1`] = `
+<div
+  style={
+    Object {
+      "textAlign": "center",
+    }
+  }>
+  <video
+    controls={true}
+    poster="IMAGE_MOCK"
+    width="100%">
+    <source
+      src="https://udso-a.akamaihd.net/923136676001/923136676001_3297209168001_1041122098001-2059462568001-anxiety-1.mp4?pubId=923136676001&videoId=3297056808001"
+      type="video/mp4" />
+  </video>
+</div>
+`;

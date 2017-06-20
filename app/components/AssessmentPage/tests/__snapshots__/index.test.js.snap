@@ -1,0 +1,629 @@
+exports[`test renders AssessmentPage 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexWrap": "wrap",
+    }
+  }>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexWrap": "wrap",
+        "margin": -2,
+        "muiPrepared": true,
+        "overflowY": "auto",
+      }
+    }>
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": 184,
+          "muiPrepared": true,
+          "padding": 2,
+          "width": "33.333333333333336%",
+        }
+      }>
+      <div
+        cols={1}
+        onTouchTap={[Function]}
+        rows={1}
+        style={
+          Object {
+            "display": "block",
+            "height": "100%",
+            "muiPrepared": true,
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }>
+        <img
+          alt="Anxiety"
+          src="IMAGE_MOCK"
+          style={
+            Object {
+              "height": "100%",
+              "left": "50%",
+              "muiPrepared": true,
+              "position": "relative",
+              "transform": "translateX(-50%)",
+            }
+          } />
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(0, 0, 0, 0.4)",
+              "bottom": 0,
+              "display": "flex",
+              "height": 48,
+              "left": 0,
+              "muiPrepared": true,
+              "position": "absolute",
+              "right": 0,
+            }
+          }>
+          <div
+            style={
+              Object {
+                "color": "#ffffff",
+                "flexGrow": 1,
+                "marginLeft": 16,
+                "marginRight": 0,
+                "muiPrepared": true,
+                "overflow": "hidden",
+              }
+            }>
+            <div
+              style={
+                Object {
+                  "fontSize": "16px",
+                  "muiPrepared": true,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "whiteSpace": "nowrap",
+                }
+              }>
+              Anxiety
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": 184,
+          "muiPrepared": true,
+          "padding": 2,
+          "width": "33.333333333333336%",
+        }
+      }>
+      <div
+        cols={1}
+        onTouchTap={[Function]}
+        rows={1}
+        style={
+          Object {
+            "display": "block",
+            "height": "100%",
+            "muiPrepared": true,
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }>
+        <img
+          alt="Panic"
+          src="IMAGE_MOCK"
+          style={
+            Object {
+              "height": "100%",
+              "left": "50%",
+              "muiPrepared": true,
+              "position": "relative",
+              "transform": "translateX(-50%)",
+            }
+          } />
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(0, 0, 0, 0.4)",
+              "bottom": 0,
+              "display": "flex",
+              "height": 48,
+              "left": 0,
+              "muiPrepared": true,
+              "position": "absolute",
+              "right": 0,
+            }
+          }>
+          <div
+            style={
+              Object {
+                "color": "#ffffff",
+                "flexGrow": 1,
+                "marginLeft": 16,
+                "marginRight": 0,
+                "muiPrepared": true,
+                "overflow": "hidden",
+              }
+            }>
+            <div
+              style={
+                Object {
+                  "fontSize": "16px",
+                  "muiPrepared": true,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "whiteSpace": "nowrap",
+                }
+              }>
+              Panic
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": 184,
+          "muiPrepared": true,
+          "padding": 2,
+          "width": "33.333333333333336%",
+        }
+      }>
+      <div
+        cols={1}
+        onTouchTap={[Function]}
+        rows={1}
+        style={
+          Object {
+            "display": "block",
+            "height": "100%",
+            "muiPrepared": true,
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }>
+        <img
+          alt="Worry"
+          src="IMAGE_MOCK"
+          style={
+            Object {
+              "height": "100%",
+              "left": "50%",
+              "muiPrepared": true,
+              "position": "relative",
+              "transform": "translateX(-50%)",
+            }
+          } />
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(0, 0, 0, 0.4)",
+              "bottom": 0,
+              "display": "flex",
+              "height": 48,
+              "left": 0,
+              "muiPrepared": true,
+              "position": "absolute",
+              "right": 0,
+            }
+          }>
+          <div
+            style={
+              Object {
+                "color": "#ffffff",
+                "flexGrow": 1,
+                "marginLeft": 16,
+                "marginRight": 0,
+                "muiPrepared": true,
+                "overflow": "hidden",
+              }
+            }>
+            <div
+              style={
+                Object {
+                  "fontSize": "16px",
+                  "muiPrepared": true,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "whiteSpace": "nowrap",
+                }
+              }>
+              Worry
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": 184,
+          "muiPrepared": true,
+          "padding": 2,
+          "width": "33.333333333333336%",
+        }
+      }>
+      <div
+        cols={1}
+        onTouchTap={[Function]}
+        rows={1}
+        style={
+          Object {
+            "display": "block",
+            "height": "100%",
+            "muiPrepared": true,
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }>
+        <img
+          alt="Depression"
+          src="IMAGE_MOCK"
+          style={
+            Object {
+              "height": "100%",
+              "left": "50%",
+              "muiPrepared": true,
+              "position": "relative",
+              "transform": "translateX(-50%)",
+            }
+          } />
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(0, 0, 0, 0.4)",
+              "bottom": 0,
+              "display": "flex",
+              "height": 48,
+              "left": 0,
+              "muiPrepared": true,
+              "position": "absolute",
+              "right": 0,
+            }
+          }>
+          <div
+            style={
+              Object {
+                "color": "#ffffff",
+                "flexGrow": 1,
+                "marginLeft": 16,
+                "marginRight": 0,
+                "muiPrepared": true,
+                "overflow": "hidden",
+              }
+            }>
+            <div
+              style={
+                Object {
+                  "fontSize": "16px",
+                  "muiPrepared": true,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "whiteSpace": "nowrap",
+                }
+              }>
+              Depression
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": 184,
+          "muiPrepared": true,
+          "padding": 2,
+          "width": "33.333333333333336%",
+        }
+      }>
+      <div
+        cols={1}
+        onTouchTap={[Function]}
+        rows={1}
+        style={
+          Object {
+            "display": "block",
+            "height": "100%",
+            "muiPrepared": true,
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }>
+        <img
+          alt="Sleep"
+          src="IMAGE_MOCK"
+          style={
+            Object {
+              "height": "100%",
+              "left": "50%",
+              "muiPrepared": true,
+              "position": "relative",
+              "transform": "translateX(-50%)",
+            }
+          } />
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(0, 0, 0, 0.4)",
+              "bottom": 0,
+              "display": "flex",
+              "height": 48,
+              "left": 0,
+              "muiPrepared": true,
+              "position": "absolute",
+              "right": 0,
+            }
+          }>
+          <div
+            style={
+              Object {
+                "color": "#ffffff",
+                "flexGrow": 1,
+                "marginLeft": 16,
+                "marginRight": 0,
+                "muiPrepared": true,
+                "overflow": "hidden",
+              }
+            }>
+            <div
+              style={
+                Object {
+                  "fontSize": "16px",
+                  "muiPrepared": true,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "whiteSpace": "nowrap",
+                }
+              }>
+              Sleep
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": 184,
+          "muiPrepared": true,
+          "padding": 2,
+          "width": "33.333333333333336%",
+        }
+      }>
+      <div
+        cols={1}
+        onTouchTap={[Function]}
+        rows={1}
+        style={
+          Object {
+            "display": "block",
+            "height": "100%",
+            "muiPrepared": true,
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }>
+        <img
+          alt="Post-Traumatic Stress"
+          src="IMAGE_MOCK"
+          style={
+            Object {
+              "height": "100%",
+              "left": "50%",
+              "muiPrepared": true,
+              "position": "relative",
+              "transform": "translateX(-50%)",
+            }
+          } />
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(0, 0, 0, 0.4)",
+              "bottom": 0,
+              "display": "flex",
+              "height": 48,
+              "left": 0,
+              "muiPrepared": true,
+              "position": "absolute",
+              "right": 0,
+            }
+          }>
+          <div
+            style={
+              Object {
+                "color": "#ffffff",
+                "flexGrow": 1,
+                "marginLeft": 16,
+                "marginRight": 0,
+                "muiPrepared": true,
+                "overflow": "hidden",
+              }
+            }>
+            <div
+              style={
+                Object {
+                  "fontSize": "16px",
+                  "muiPrepared": true,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "whiteSpace": "nowrap",
+                }
+              }>
+              Post-Traumatic Stress
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": 184,
+          "muiPrepared": true,
+          "padding": 2,
+          "width": "33.333333333333336%",
+        }
+      }>
+      <div
+        cols={1}
+        onTouchTap={[Function]}
+        rows={1}
+        style={
+          Object {
+            "display": "block",
+            "height": "100%",
+            "muiPrepared": true,
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }>
+        <img
+          alt="Stress"
+          src="IMAGE_MOCK"
+          style={
+            Object {
+              "height": "100%",
+              "left": "50%",
+              "muiPrepared": true,
+              "position": "relative",
+              "transform": "translateX(-50%)",
+            }
+          } />
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(0, 0, 0, 0.4)",
+              "bottom": 0,
+              "display": "flex",
+              "height": 48,
+              "left": 0,
+              "muiPrepared": true,
+              "position": "absolute",
+              "right": 0,
+            }
+          }>
+          <div
+            style={
+              Object {
+                "color": "#ffffff",
+                "flexGrow": 1,
+                "marginLeft": 16,
+                "marginRight": 0,
+                "muiPrepared": true,
+                "overflow": "hidden",
+              }
+            }>
+            <div
+              style={
+                Object {
+                  "fontSize": "16px",
+                  "muiPrepared": true,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "whiteSpace": "nowrap",
+                }
+              }>
+              Stress
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": 184,
+          "muiPrepared": true,
+          "padding": 2,
+          "width": "33.333333333333336%",
+        }
+      }>
+      <div
+        cols={1}
+        onTouchTap={[Function]}
+        rows={1}
+        style={
+          Object {
+            "display": "block",
+            "height": "100%",
+            "muiPrepared": true,
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }>
+        <img
+          alt="Stigma"
+          src="IMAGE_MOCK"
+          style={
+            Object {
+              "height": "100%",
+              "left": "50%",
+              "muiPrepared": true,
+              "position": "relative",
+              "transform": "translateX(-50%)",
+            }
+          } />
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(0, 0, 0, 0.4)",
+              "bottom": 0,
+              "display": "flex",
+              "height": 48,
+              "left": 0,
+              "muiPrepared": true,
+              "position": "absolute",
+              "right": 0,
+            }
+          }>
+          <div
+            style={
+              Object {
+                "color": "#ffffff",
+                "flexGrow": 1,
+                "marginLeft": 16,
+                "marginRight": 0,
+                "muiPrepared": true,
+                "overflow": "hidden",
+              }
+            }>
+            <div
+              style={
+                Object {
+                  "fontSize": "16px",
+                  "muiPrepared": true,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "whiteSpace": "nowrap",
+                }
+              }>
+              Stigma
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

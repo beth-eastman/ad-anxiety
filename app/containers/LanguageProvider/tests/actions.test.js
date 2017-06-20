@@ -17,3 +17,8 @@ describe('LanguageProvider actions', () => {
     });
   });
 });
+
+// handleRequestClose
+
+
+// handleTouchTap

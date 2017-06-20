@@ -5,7 +5,7 @@
  * Bethany Eastman
  */
 
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Card, List, ListItem } from 'material-ui';
 import { library } from 'data/library';
 
@@ -41,3 +41,7 @@ export default class LibraryPage extends React.Component {      // eslint-disabl
     );
   }
 }
+
+LibraryPage.propTypes = {
+  router: PropTypes.any,
+};

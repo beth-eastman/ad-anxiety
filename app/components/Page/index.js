@@ -4,7 +4,7 @@
  * different T2 Assessments
  */
 
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Card, CardText } from 'material-ui';
 import { assessments } from 'local-t2-assessment-suite';
 const { Anxiety, Sleep, Panic, Worry, Stress, Stigma, Depression, PostTraumaticStress } = assessments;
@@ -77,6 +77,6 @@ export default class Page extends React.Component {
 
 /* What proptypes to expect */
 Page.propTypes = {
-  assessmentId: React.PropTypes.string,
-  params: React.PropTypes.any,
+  assessmentId: PropTypes.string,
+  params: PropTypes.any,
 };

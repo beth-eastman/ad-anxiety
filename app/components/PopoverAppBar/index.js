@@ -36,9 +36,9 @@ export default class PopoverAppBar extends React.Component {
   handleChangeIcon = (newIcon, newPathName) => {
     let iconChange = null;
     if (newIcon === 'Home') {
-      iconChange = <Menu router={this.props.router} />;
+      iconChange = <Menu router={this.props.router} />; // eslint-disable-line
     } else {
-      iconChange = <Back newPathName={newPathName} router={this.props.router} />;
+      iconChange = <Back newPathName={newPathName} router={this.props.router} />; // eslint-disable-line
     }
     this.setState({
       leftIcon: iconChange,
@@ -51,7 +51,7 @@ export default class PopoverAppBar extends React.Component {
       (child) => React.cloneElement(child, {
         setPageTitle: this.handlePageChange,
         changeIcon: this.handleChangeIcon,
-        router: this.props.router,
+        router: this.props.router, // eslint-disable-line
       })
     );
 

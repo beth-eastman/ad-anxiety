@@ -1,3 +1,4 @@
+/* eslint-disable */
 const fs = require('fs');
 const packageJson = require('./package.json');
 
@@ -36,4 +37,3 @@ prompt.get(schema, function(err, result) {
 	console.log('*******************************');
 	console.log('');
 });
-

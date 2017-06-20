@@ -1,0 +1,477 @@
+exports[`test renders VideosPage 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexWrap": "wrap",
+    }
+  }>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexWrap": "wrap",
+        "margin": -2,
+        "muiPrepared": true,
+        "overflowY": "auto",
+      }
+    }>
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": 184,
+          "muiPrepared": true,
+          "padding": 2,
+          "width": "33.333333333333336%",
+        }
+      }>
+      <div
+        cols={1}
+        onTouchTap={[Function]}
+        rows={1}
+        style={
+          Object {
+            "display": "block",
+            "height": "100%",
+            "muiPrepared": true,
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }>
+        <img
+          alt="Understanding Anxiety"
+          src="IMAGE_MOCK"
+          style={
+            Object {
+              "height": "100%",
+              "left": "50%",
+              "muiPrepared": true,
+              "position": "relative",
+              "transform": "translateX(-50%)",
+            }
+          } />
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(0, 0, 0, 0.4)",
+              "bottom": 0,
+              "display": "flex",
+              "height": 48,
+              "left": 0,
+              "muiPrepared": true,
+              "position": "absolute",
+              "right": 0,
+            }
+          }>
+          <div
+            style={
+              Object {
+                "color": "#ffffff",
+                "flexGrow": 1,
+                "marginLeft": 16,
+                "marginRight": 0,
+                "muiPrepared": true,
+                "overflow": "hidden",
+              }
+            }>
+            <div
+              style={
+                Object {
+                  "fontSize": "16px",
+                  "muiPrepared": true,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "whiteSpace": "nowrap",
+                }
+              }>
+              Understanding Anxiety
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": 184,
+          "muiPrepared": true,
+          "padding": 2,
+          "width": "33.333333333333336%",
+        }
+      }>
+      <div
+        cols={1}
+        onTouchTap={[Function]}
+        rows={1}
+        style={
+          Object {
+            "display": "block",
+            "height": "100%",
+            "muiPrepared": true,
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }>
+        <img
+          alt="Types of Anxiety"
+          src="IMAGE_MOCK"
+          style={
+            Object {
+              "height": "100%",
+              "left": "50%",
+              "muiPrepared": true,
+              "position": "relative",
+              "transform": "translateX(-50%)",
+            }
+          } />
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(0, 0, 0, 0.4)",
+              "bottom": 0,
+              "display": "flex",
+              "height": 48,
+              "left": 0,
+              "muiPrepared": true,
+              "position": "absolute",
+              "right": 0,
+            }
+          }>
+          <div
+            style={
+              Object {
+                "color": "#ffffff",
+                "flexGrow": 1,
+                "marginLeft": 16,
+                "marginRight": 0,
+                "muiPrepared": true,
+                "overflow": "hidden",
+              }
+            }>
+            <div
+              style={
+                Object {
+                  "fontSize": "16px",
+                  "muiPrepared": true,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "whiteSpace": "nowrap",
+                }
+              }>
+              Types of Anxiety
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": 184,
+          "muiPrepared": true,
+          "padding": 2,
+          "width": "33.333333333333336%",
+        }
+      }>
+      <div
+        cols={1}
+        onTouchTap={[Function]}
+        rows={1}
+        style={
+          Object {
+            "display": "block",
+            "height": "100%",
+            "muiPrepared": true,
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }>
+        <img
+          alt="Recognizing Triggers"
+          src="IMAGE_MOCK"
+          style={
+            Object {
+              "height": "100%",
+              "left": "50%",
+              "muiPrepared": true,
+              "position": "relative",
+              "transform": "translateX(-50%)",
+            }
+          } />
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(0, 0, 0, 0.4)",
+              "bottom": 0,
+              "display": "flex",
+              "height": 48,
+              "left": 0,
+              "muiPrepared": true,
+              "position": "absolute",
+              "right": 0,
+            }
+          }>
+          <div
+            style={
+              Object {
+                "color": "#ffffff",
+                "flexGrow": 1,
+                "marginLeft": 16,
+                "marginRight": 0,
+                "muiPrepared": true,
+                "overflow": "hidden",
+              }
+            }>
+            <div
+              style={
+                Object {
+                  "fontSize": "16px",
+                  "muiPrepared": true,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "whiteSpace": "nowrap",
+                }
+              }>
+              Recognizing Triggers
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": 184,
+          "muiPrepared": true,
+          "padding": 2,
+          "width": "33.333333333333336%",
+        }
+      }>
+      <div
+        cols={1}
+        onTouchTap={[Function]}
+        rows={1}
+        style={
+          Object {
+            "display": "block",
+            "height": "100%",
+            "muiPrepared": true,
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }>
+        <img
+          alt="Treatment Options"
+          src="IMAGE_MOCK"
+          style={
+            Object {
+              "height": "100%",
+              "left": "50%",
+              "muiPrepared": true,
+              "position": "relative",
+              "transform": "translateX(-50%)",
+            }
+          } />
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(0, 0, 0, 0.4)",
+              "bottom": 0,
+              "display": "flex",
+              "height": 48,
+              "left": 0,
+              "muiPrepared": true,
+              "position": "absolute",
+              "right": 0,
+            }
+          }>
+          <div
+            style={
+              Object {
+                "color": "#ffffff",
+                "flexGrow": 1,
+                "marginLeft": 16,
+                "marginRight": 0,
+                "muiPrepared": true,
+                "overflow": "hidden",
+              }
+            }>
+            <div
+              style={
+                Object {
+                  "fontSize": "16px",
+                  "muiPrepared": true,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "whiteSpace": "nowrap",
+                }
+              }>
+              Treatment Options
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": 184,
+          "muiPrepared": true,
+          "padding": 2,
+          "width": "33.333333333333336%",
+        }
+      }>
+      <div
+        cols={1}
+        onTouchTap={[Function]}
+        rows={1}
+        style={
+          Object {
+            "display": "block",
+            "height": "100%",
+            "muiPrepared": true,
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }>
+        <img
+          alt="Back In Control"
+          src="IMAGE_MOCK"
+          style={
+            Object {
+              "height": "100%",
+              "left": "50%",
+              "muiPrepared": true,
+              "position": "relative",
+              "transform": "translateX(-50%)",
+            }
+          } />
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(0, 0, 0, 0.4)",
+              "bottom": 0,
+              "display": "flex",
+              "height": 48,
+              "left": 0,
+              "muiPrepared": true,
+              "position": "absolute",
+              "right": 0,
+            }
+          }>
+          <div
+            style={
+              Object {
+                "color": "#ffffff",
+                "flexGrow": 1,
+                "marginLeft": 16,
+                "marginRight": 0,
+                "muiPrepared": true,
+                "overflow": "hidden",
+              }
+            }>
+            <div
+              style={
+                Object {
+                  "fontSize": "16px",
+                  "muiPrepared": true,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "whiteSpace": "nowrap",
+                }
+              }>
+              Back In Control
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": 184,
+          "muiPrepared": true,
+          "padding": 2,
+          "width": "33.333333333333336%",
+        }
+      }>
+      <div
+        cols={1}
+        onTouchTap={[Function]}
+        rows={1}
+        style={
+          Object {
+            "display": "block",
+            "height": "100%",
+            "muiPrepared": true,
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }>
+        <img
+          alt="Reduce Stress"
+          src="https://brightcove04pmdo-a.akamaihd.net/923136676001/923136676001_3682877795001_vs-53c95f12e4b0afffb80dc10d-782203291001.jpg?pubId=923136676001&videoId=3682799653001"
+          style={
+            Object {
+              "height": "100%",
+              "left": "50%",
+              "muiPrepared": true,
+              "position": "relative",
+              "transform": "translateX(-50%)",
+            }
+          } />
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(0, 0, 0, 0.4)",
+              "bottom": 0,
+              "display": "flex",
+              "height": 48,
+              "left": 0,
+              "muiPrepared": true,
+              "position": "absolute",
+              "right": 0,
+            }
+          }>
+          <div
+            style={
+              Object {
+                "color": "#ffffff",
+                "flexGrow": 1,
+                "marginLeft": 16,
+                "marginRight": 0,
+                "muiPrepared": true,
+                "overflow": "hidden",
+              }
+            }>
+            <div
+              style={
+                Object {
+                  "fontSize": "16px",
+                  "muiPrepared": true,
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "whiteSpace": "nowrap",
+                }
+              }>
+              Reduce Stress
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

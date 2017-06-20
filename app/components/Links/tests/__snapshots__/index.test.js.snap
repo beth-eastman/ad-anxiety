@@ -1,0 +1,88 @@
+exports[`test renders Links 1`] = `
+<div
+  style={
+    Object {
+      "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+      "backgroundColor": "#ffffff",
+      "borderRadius": 2,
+      "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
+             0 1px 4px rgba(0, 0, 0, 0.12)",
+      "boxSizing": "border-box",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "fontFamily": "Roboto, sans-serif",
+      "muiPrepared": true,
+      "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+      "zIndex": 1,
+    }
+  }>
+  <div
+    style={
+      Object {
+        "paddingBottom": 8,
+      }
+    }>
+    <div
+      style={
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+          "fontSize": 14,
+          "muiPrepared": true,
+          "padding": 16,
+        }
+      }>
+      <div
+        id="link">
+        <h2>
+          Anxiety Disorders Association of America
+        </h2>
+        <a
+          href="http://www.adaa.org/">
+          http://www.adaa.org/
+        </a>
+        <br />
+        Comprehensive information on anxiety disorders, multiple resources including help finding a therapist specializing in the treatment of anxiety disorders.
+        <br />
+      </div>
+      <div
+        id="link">
+        <h2>
+          National Institutes of Mental Health
+        </h2>
+        <a
+          href="http://www.nimh.nih.gov/health/topics/anxiety-disorders/index.shtml">
+          http://www.nimh.nih.gov/health/topics/anxiety-disorders/index.shtml
+        </a>
+        <br />
+        A source for government publications and information about medications for anxiety.
+        <br />
+      </div>
+      <div
+        id="link">
+        <h2>
+          Substance Abuse and Mental Health Services Information, National Mental Health Information Center, Center for Mental Health Services
+        </h2>
+        <a
+          href="http://store.samhsa.gov/facet/Issues-Conditions-Disorders/term/Anxiety-Disorders-Phobias">
+          http://store.samhsa.gov/facet/Issues-Conditions-Disorders/term/Anxiety-Disorders-Phobias
+        </a>
+        <br />
+        Summary information on symptoms and treatment of anxiety disorders.
+        <br />
+      </div>
+      <div
+        id="link">
+        <h2>
+          MentalHelp.net
+        </h2>
+        <a
+          href="http://www.mentalhelp.net/poc/center_index.php?id=1">
+          http://www.mentalhelp.net/poc/center_index.php?id=1
+        </a>
+        <br />
+        A commercial website providing information on many behavioral health topics including anxiety.
+        <br />
+      </div>
+    </div>
+  </div>
+</div>
+`;

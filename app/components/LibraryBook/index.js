@@ -1,9 +1,10 @@
+/* eslint-disable */
 /**
  * A page for a section of library content.
  *
  * Bethany Eastman
  */
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Card, CardText } from 'material-ui';
 import { library } from 'data/library';
 
@@ -35,6 +36,6 @@ export default class LibraryBook extends React.Component { // eslint-disable-lin
 
 /* Check for valid prop types */
 LibraryBook.propTypes = {
-  params: React.PropTypes.any,
-  libraryPageId: React.PropTypes.number,
+  params: PropTypes.any,
+  libraryPageId: PropTypes.number,
 };

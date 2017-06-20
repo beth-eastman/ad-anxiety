@@ -18,6 +18,9 @@ export default class Menu extends React.Component {
   constructor(props) {
     super(props);
 
+    // this.handleTouchTap = this.handleTouchTap.bind(this);
+    // this.handleRequestClose = this.handleRequestClose.bend(this);
+
     this.state = {
       open: false,
     };
