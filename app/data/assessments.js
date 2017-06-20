@@ -1,4 +1,3 @@
-/* eslint-disable */
 // images
 import UnderstandingAnxiety from 'components/img/anxiety-understanding-anxiety.jpg';
 import AnxietyTreatment from 'components/img/anxiety-types-of-anxiety.jpg';
@@ -15,12 +14,12 @@ import Deployment from 'components/img/original.jpg';
 const assessments = [
   {
     id: 'anxiety',
-    img: Panic,
+    img: AnxietyTreatment,
     title: 'Anxiety',
   },
   {
     id: 'panic',
-    img: AnxietyTreatment,
+    img: Panic,
     title: 'Panic',
   },
   {

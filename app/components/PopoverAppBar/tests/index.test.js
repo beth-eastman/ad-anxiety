@@ -8,7 +8,7 @@ import PopoverAppBar from '../index';
 it('renders PopoverAppBar', () => {
   const tree = renderer.create(
     <MuiThemeProvider>
-      <PopoverAppBar params={{ factId: 0 }} setPageTitle={function () {}} changeIcon={function () {}} />
+      <PopoverAppBar setPageTitle={function () {}} changeIcon={function () {}} />
     </MuiThemeProvider>
   ).toJSON();
   expect(tree).toMatchSnapshot();
