@@ -63,8 +63,6 @@ export default class VideosPage extends React.Component {
     );
   }
 
-  componentWillUnmount() {}
-
   /* Render a list of all videos contaning an image and video title */
   render() {
     return (

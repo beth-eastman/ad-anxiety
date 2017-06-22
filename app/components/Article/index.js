@@ -1,5 +1,5 @@
 /**
- * A page containing an Article. The page contains different sections of content.
+ * A page containing an Article. The Article page contains different sections of content.
  *
  * Bethany Eastman
  */

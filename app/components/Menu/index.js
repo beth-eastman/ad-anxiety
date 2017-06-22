@@ -1,4 +1,10 @@
 /* eslint-disable */
+/**
+ * The Menu component is the navigation drop down menu containing
+ * links to Home, Library, Resources, etc.
+ *
+ * Bethany Eastman
+ */
 import React from 'react';
 import MaterialMenu from 'material-ui/Menu';
 import Divider from 'material-ui/Divider';
@@ -17,9 +23,6 @@ export default class Menu extends React.Component {
 
   constructor(props) {
     super(props);
-
-    // this.handleTouchTap = this.handleTouchTap.bind(this);
-    // this.handleRequestClose = this.handleRequestClose.bend(this);
 
     this.state = {
       open: false,

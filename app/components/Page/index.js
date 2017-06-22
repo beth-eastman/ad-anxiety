@@ -1,9 +1,8 @@
 /* eslint-disable */
 /**
- * Page of an assessment, uses Jack Lightfoot's npm module contatining
- * different T2 Assessments
+ * Page component will use Jack Lightfoot's npm module contatining
+ * different T2 Assessments quizzes
  */
-
 import React, { PropTypes } from 'react';
 import { Card, CardText } from 'material-ui';
 import { assessments } from 'local-t2-assessment-suite';

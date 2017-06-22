@@ -1,5 +1,5 @@
 /**
- * A resource page containing information and links to external websites
+ * A Link component is a resource page containing text information and links to external websites
  *
  * Bethany Eastman
  */

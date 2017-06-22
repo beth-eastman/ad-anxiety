@@ -1,5 +1,5 @@
 /**
- * Contains content for the homepage of the application.
+ * The HomePage component contains for the homepage of the application.
  *
  * Bethany Eastman
  */

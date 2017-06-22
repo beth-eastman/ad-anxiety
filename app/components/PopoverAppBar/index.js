@@ -1,5 +1,6 @@
 /**
- * Contains the App Bar component as well as menu items.
+ * Contains the App Bar component as well as menu items. The app bar controls
+ * a navication icon and a title.
  *
  * Bethany Eastman
  */

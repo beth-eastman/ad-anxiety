@@ -1,6 +1,6 @@
 /* eslint-disable */
 /**
- * A page for a section of library content.
+ * A LibraryBook component is page for a specific library section.
  *
  * Bethany Eastman
  */
