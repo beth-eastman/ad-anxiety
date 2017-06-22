@@ -1,5 +1,5 @@
 /**
- * A resource page containing text about books.
+ * A Book is a resource page containing text about books.
  *
  * Bethany Eastman
  */

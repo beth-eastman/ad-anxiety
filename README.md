@@ -13,6 +13,10 @@ after Jack Lightfoot's [Alcohol and Drugs](https://github.com/jlightfoot2/ad-dru
 
 To install all packages and dependencies, run:
 
+```yarn install```
+
+OR
+
 ```npm install```
 
 ## Run

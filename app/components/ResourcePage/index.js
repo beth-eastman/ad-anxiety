@@ -1,5 +1,5 @@
 /**
- * Contains a list of different resource pages (Links, Books, Articles, and Facts).
+ * Resource page component is a list of different resource pages (Links, Books, Articles, and Facts).
  *
  * Bethany Eastman
  */

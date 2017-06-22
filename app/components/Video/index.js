@@ -1,6 +1,6 @@
 /* eslint-disable */
 /**
- * A component containing a single video.
+ * Video component is a component containing a single video.
  *
  * Bethany Eastman
  */
@@ -51,18 +51,6 @@ export default class Video extends React.Component {
       }
     );
   }
-
-  // componentWillUnmount () {
-  //     this.loadInterval && clearInterval(this.loadInterval);
-  //     this.loadInterval = false;
-  // }
-  //
-  //
-  // componentWillUnmount() {}
-
-  // componentWillUnmount() {
-  //   window.removeEventListener('resize', setVideoWidth(this));
-  // }
 
   /* Create a video component with the thumbnail and source video */
   render() {

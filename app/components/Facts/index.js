@@ -1,5 +1,5 @@
 /**
- * A resource page containing the text about a fact of anxiety.
+ * A Fact component represents a resource page containing text about a fact of anxiety.
  *
  * Bethany Eastman
  */
