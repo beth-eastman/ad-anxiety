@@ -33,7 +33,14 @@ import LanguageProvider from 'containers/LanguageProvider';
 
 // Load the favicon, the manifest.json file and the .htaccess file
 /* eslint-disable import/no-unresolved, import/extensions */
-import '!file-loader?name=[name].[ext]!./favicon.ico';
+// import '!file-loader?name=[name].[ext]!../icons/Anxiety-144.png';
+import '!file-loader?name=[name].[ext]!./favicon.png';
+import '!file-loader?name=[name].[ext]!./Anxiety-128.png';
+import '!file-loader?name=[name].[ext]!./Anxiety-144.png';
+import '!file-loader?name=[name].[ext]!./Anxiety-152.png';
+import '!file-loader?name=[name].[ext]!./Anxiety-192.png';
+import '!file-loader?name=[name].[ext]!./Anxiety-256.png';
+import '!file-loader?name=[name].[ext]!./Anxiety-512.png';
 import '!file-loader?name=[name].[ext]!./manifest.json';
 import 'file-loader?name=[name].[ext]!./.htaccess';
 /* eslint-enable import/no-unresolved, import/extensions */
