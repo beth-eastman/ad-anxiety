@@ -1,40 +1,11 @@
-# After Deployment Anxiety App
+# After Deployment Anxiety
 
-[![Build Status](https://travis-ci.org/beth-eastman/ad-anxiety.svg?branch=master)](https://travis-ci.org/beth-eastman/ad-anxiety)
+After Deployment Anxiety app built on the [T2 Starter Boilerplate](https://github.com/jlightfoot2/t2-pwa-starter) by [Jack Lightfoot](https://github.com/jlightfoot2)
 
-# Overview
-
-A React Progressive Web App for the [After Deployment Anxiety](http://afterdeployment.dcoe.mil/topics-anxiety) website.
-
-This project is built on [React Boilerplate](https://github.com/react-boilerplate/react-boilerplate) and is modeled
-after Jack Lightfoot's [Alcohol and Drugs](https://github.com/jlightfoot2/ad-drugs-pwa) module.
-
-## Installation
-
-To install all packages and dependencies, run:
-
-```yarn install```
-
-OR
-
-```npm install```
-
-## Run
-
-After installing dependencies, start the application by running:
-
-```npm run start```
-
-View the application at [localhost:3000](localhost:3000)
-
-## Build
-
-```npm run build```
-
-## Test
-
-Run tests with
-
-```npm run test```
-
-For more testing commands visit the React Boilerplate [docs](https://github.com/react-boilerplate/react-boilerplate/blob/master/docs/general/commands.md#testing)
+This project is built off of:
+- [x] TypeScript 2.x
+- [x] Redux, React-Redux
+- [x] React-Router 4
+- [x] Material-UI
+- [x] Jest, Enzyme
+- [x] Offline Plugin

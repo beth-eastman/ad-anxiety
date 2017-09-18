@@ -1,9 +1,6 @@
-# Don't check auto-generated stuff into git
-coverage
 node_modules
-stats.json
-
-# Cruft
+cordova/platforms/
+cordova/plugins/
+dist
 .DS_Store
-npm-debug.log
-.idea
+build/
