@@ -1,4 +1,0 @@
-exports[`<HomePage /> should render the page message 1`] = `
-<HomePage
-  changeIcon={[Function]} />
-`;
